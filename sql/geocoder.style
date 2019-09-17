@@ -1,0 +1,26 @@
+# OsmType  Tag          DataType     Flags
+node,way   addr:housename      text  polygon
+node,way   addr:housenumber    text  polygon
+way        addr:interpolation  text  polygon
+node,way   addr:street         text  polygon
+
+node,way   building     text         polygon
+node,way   boundary     text         polygon
+node,way   place        text         polygon
+node,way   admin_level  text         polygon
+node,way   name         text         linear
+
+node,way   highway      text         linear
+way        bridge       text         linear
+way        tunnel       text         linear
+node,way   ref          text         linear
+
+node,way   shop         text         polygon
+node,way   amenity      text         polygon
+node,way   historic     text         polygon
+node,way   leisure      text         polygon
+node,way   tourism      text         polygon
+node,way   office       text         polygon
+node,way   craft        text         polygon
+
+way way_area real linear # This is calculated during import

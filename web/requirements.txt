@@ -1,0 +1,4 @@
+flask-restful
+flask-cors
+psycopg2
+uwsgi
