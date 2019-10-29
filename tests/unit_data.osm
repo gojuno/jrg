@@ -1,0 +1,734 @@
+<osm generator="JOSM" upload="false" version="0.6">
+  <node id="10000" lat="40.6785188" lon="-73.9897708" version="1" />
+  <node id="10001" lat="40.6785532" lon="-73.9898567" version="1" />
+  <node id="10002" lat="40.6787316" lon="-73.9897332" version="1" />
+  <node id="10003" lat="40.6786974" lon="-73.9896478" version="1" />
+  <node id="10004" lat="40.6784695" lon="-73.9896481" version="1" />
+  <node id="10005" lat="40.6787316" lon="-73.9896236" version="1" />
+  <node id="10006" lat="40.6787509" lon="-73.9895819" version="1" />
+  <node id="10007" lat="40.6787483" lon="-73.9895755" version="1" />
+  <node id="10008" lat="40.6789191" lon="-73.9894573" version="1" />
+  <node id="10009" lat="40.6788827" lon="-73.9893665" version="1" />
+  <node id="10010" lat="40.6788814" lon="-73.9893631" version="1" />
+  <node id="10011" lat="40.7213565" lon="-73.9376014" version="1" />
+  <node id="10012" lat="40.7216038" lon="-73.9377108" version="1" />
+  <node id="10013" lat="40.7216296" lon="-73.9376103" version="1" />
+  <node id="10014" lat="40.7213823" lon="-73.9375009" version="1" />
+  <node id="10015" lat="40.7213308" lon="-73.9377019" version="1" />
+  <node id="10016" lat="40.7215781" lon="-73.9378113" version="1" />
+  <node id="10017" lat="40.7589747" lon="-73.9706892" version="1" />
+  <node id="10018" lat="40.7584945" lon="-73.9710417" version="1" />
+  <node id="10019" lat="40.7589987" lon="-73.9722389" version="1" />
+  <node id="10020" lat="40.7591753" lon="-73.9721092" version="1" />
+  <node id="10021" lat="40.7592037" lon="-73.9721766" version="1" />
+  <node id="10022" lat="40.7594431" lon="-73.9720008" version="1" />
+  <node id="10023" lat="40.7594148" lon="-73.9719333" version="1" />
+  <node id="10024" lat="40.7594789" lon="-73.9718864" version="1" />
+  <node id="10025" lat="40.7587624" lon="-73.9716421" version="1">
+    <tag k="addr:housenumber" v="101" />
+    <tag k="addr:postcode" v="10022" />
+    <tag k="addr:street" v="East 53rd Street" />
+  </node>
+  <node id="10026" lat="40.7587625" lon="-73.9709329" version="1">
+    <tag k="addr:city" v="New York" />
+    <tag k="addr:country" v="US" />
+    <tag k="addr:housenumber" v="630" />
+    <tag k="addr:postcode" v="10022" />
+    <tag k="addr:state" v="NY" />
+    <tag k="addr:street" v="Lexington Avenue" />
+  </node>
+  <node id="10027" lat="40.759216" lon="-73.9713109" version="1">
+    <tag k="addr:housenumber" v="100" />
+    <tag k="addr:postcode" v="10022" />
+    <tag k="addr:street" v="East 54th Street" />
+  </node>
+  <node id="10028" lat="40.759727" lon="-73.9722665" version="1" />
+  <node id="10029" lat="40.7596398" lon="-73.9720595" version="1" />
+  <node id="10030" lat="40.7590024" lon="-73.970533" version="1" />
+  <node id="10031" lat="40.7590168" lon="-73.9725124" version="1" />
+  <node id="10032" lat="40.7602692" lon="-73.9716019" version="1" />
+  <node id="10033" lat="40.7660601" lon="-73.97037" version="1" />
+  <node id="10034" lat="40.7660795" lon="-73.9704161" version="1" />
+  <node id="10035" lat="40.7661133" lon="-73.9703914" version="1" />
+  <node id="10036" lat="40.7661286" lon="-73.9704277" version="1" />
+  <node id="10037" lat="40.7662899" lon="-73.9703099" version="1" />
+  <node id="10038" lat="40.7662552" lon="-73.9702275" version="1" />
+  <node id="10039" lat="40.7660821" lon="-73.970278" version="1" />
+  <node id="10040" lat="40.7660946" lon="-73.9703077" version="1" />
+  <node id="10041" lat="40.7660481" lon="-73.9703417" version="1" />
+  <node id="10042" lat="40.7662307" lon="-73.9701694" version="1" />
+  <node id="10043" lat="40.7660564" lon="-73.9702173" version="1" />
+  <node id="10044" lat="40.7660717" lon="-73.9702535" version="1" />
+  <node id="10045" lat="40.7660252" lon="-73.9702875" version="1" />
+  <node id="10046" lat="40.7660356" lon="-73.9703119" version="1" />
+  <node id="10047" lat="40.766205" lon="-73.9701088" version="1" />
+  <node id="10048" lat="40.76609630607" lon="-73.96959811583" version="1" />
+  <node id="10049" lat="40.76676769878" lon="-73.97119134799" version="1" />
+  <node id="10050" lat="40.72192083648" lon="-73.93680811197" version="1" />
+  <node id="10051" lat="40.72151020852" lon="-73.93843353063" version="1" />
+  <node id="10052" lat="40.67867715908" lon="-73.99042278796" version="1" />
+  <node id="10053" lat="40.67829677652" lon="-73.98942500621" version="1" />
+  <node id="10054" lat="40.86332265789" lon="-73.9344745928" version="1" />
+  <node id="10055" lat="40.86206093084" lon="-73.93534899294" version="1" />
+  <node id="10056" lat="40.86055169521" lon="-73.93615365565" version="1" />
+  <node id="10057" lat="40.85847035418" lon="-73.93794537127" version="1" />
+  <node id="10058" lat="40.8608225" lon="-73.9326758" version="1" />
+  <node id="10059" lat="40.860817" lon="-73.9326613" version="1" />
+  <node id="10060" lat="40.8607005" lon="-73.9327369" version="1" />
+  <node id="10061" lat="40.8606997" lon="-73.9327348" version="1" />
+  <node id="10062" lat="40.8606231" lon="-73.9327845" version="1" />
+  <node id="10063" lat="40.860656" lon="-73.9328726" version="1" />
+  <node id="10064" lat="40.8607307" lon="-73.9328241" version="1" />
+  <node id="10065" lat="40.8607325" lon="-73.9328288" version="1" />
+  <node id="10066" lat="40.8607905" lon="-73.9327912" version="1" />
+  <node id="10067" lat="40.8607994" lon="-73.932815" version="1" />
+  <node id="10068" lat="40.8608565" lon="-73.9327779" version="1" />
+  <node id="10069" lat="40.860847" lon="-73.9327527" version="1" />
+  <node id="10070" lat="40.8608941" lon="-73.9327221" version="1" />
+  <node id="10071" lat="40.8608662" lon="-73.9326474" version="1" />
+  <node id="10072" lat="40.85956580498" lon="-73.93355727732" version="1" />
+  <node id="10073" lat="40.8599066082" lon="-73.93297255576" version="1" />
+  <node id="10074" lat="40.86040563832" lon="-73.93255949557" version="1" />
+  <node id="10075" lat="40.86088843625" lon="-73.93247366488" version="1" />
+  <node id="10076" lat="40.86141991561" lon="-73.93242538512" version="1" />
+  <node id="10077" lat="40.86192704842" lon="-73.93250048697" version="1" />
+  <node id="10078" lat="40.86300215715" lon="-73.93390596449" version="1" />
+  <node id="10079" lat="40.86137528773" lon="-73.93494129717" version="1" />
+  <node id="10080" lat="40.86088437914" lon="-73.93505394995" version="1" />
+  <node id="10081" lat="40.86037318119" lon="-73.93514514506" version="1" />
+  <node id="10082" lat="40.85995123706" lon="-73.93541873038" version="1" />
+  <node id="10083" lat="40.85952929024" lon="-73.93587470591" version="1" />
+  <node id="10084" lat="40.85920877115" lon="-73.93643260539" version="1" />
+  <node id="10085" lat="40.8584784687" lon="-73.93711925089" version="1" />
+  <node id="3111837409" lat="40.9722199" lon="-73.8037561" version="1">
+    <tag k="addr:city" v="Scarsdale" />
+    <tag k="addr:housenumber" v="750" />
+    <tag k="addr:postcode" v="10583" />
+    <tag k="addr:street" v="White Plains Road" />
+    <tag k="name" v="Lord and Taylor" />
+    <tag k="shop" v="clothes" />
+    <tag k="website" v="https://www.lordandtaylor.com/webapp/wcs/stores/servlet/en/lord-and-taylor" />
+  </node>
+  <node id="10087" lat="40.9724373" lon="-73.8047964" version="1">
+    <tag k="addr:city" v="Scarsdale" />
+    <tag k="addr:housenumber" v="727" />
+    <tag k="addr:postcode" v="10583" />
+    <tag k="addr:street" v="White Plains Road" />
+    <tag k="name" v="Trader Joe's" />
+    <tag k="phone" v="914-472-2988" />
+    <tag k="shop" v="supermarket" />
+    <tag k="website" v="https://www.traderjoes.com/" />
+  </node>
+  <node id="10088" lat="40.97148202709" lon="-73.80536377966" version="1" />
+  <node id="10089" lat="40.97204097011" lon="-73.80480588019" version="1" />
+  <node id="10090" lat="40.97246624967" lon="-73.80435526907" version="1" />
+  <node id="10091" lat="40.97326819795" lon="-73.80383492053" version="1" />
+  <node id="10092" lat="40.9387258" lon="-73.8178786" version="1" />
+  <node id="10093" lat="40.9387425" lon="-73.8177941" version="1" />
+  <node id="10094" lat="40.9387527" lon="-73.8177968" version="1" />
+  <node id="10095" lat="40.9387541" lon="-73.8177879" version="1" />
+  <node id="10096" lat="40.9387594" lon="-73.8177897" version="1" />
+  <node id="10097" lat="40.9387703" lon="-73.8177287" version="1" />
+  <node id="10098" lat="40.9387656" lon="-73.8177261" version="1" />
+  <node id="10099" lat="40.9387663" lon="-73.817721" version="1" />
+  <node id="10100" lat="40.9387577" lon="-73.8177177" version="1" />
+  <node id="10101" lat="40.9387699" lon="-73.8176379" version="1" />
+  <node id="10102" lat="40.9386909" lon="-73.8176084" version="1" />
+  <node id="10103" lat="40.9386807" lon="-73.8176842" version="1" />
+  <node id="10104" lat="40.9386422" lon="-73.8176781" version="1" />
+  <node id="10105" lat="40.9386113" lon="-73.8178551" version="1" />
+  <node id="10106" lat="40.9386701" lon="-73.8178739" version="1" />
+  <node id="10107" lat="40.9386721" lon="-73.8178619" version="1" />
+  <node id="10108" lat="40.9393884" lon="-73.8171071" version="1" />
+  <node id="10109" lat="40.9392724" lon="-73.8171744" version="1" />
+  <node id="10110" lat="40.9391642" lon="-73.8172464" version="1" />
+  <node id="10111" lat="40.9390933" lon="-73.8173036" version="1" />
+  <node id="10112" lat="40.9390357" lon="-73.8173735" version="1" />
+  <node id="10113" lat="40.9389937" lon="-73.8174425" version="1" />
+  <node id="10114" lat="40.9389565" lon="-73.8175398" version="1" />
+  <node id="10115" lat="40.938917" lon="-73.8177202" version="1" />
+  <node id="10116" lat="40.938514" lon="-73.8197972" version="1" />
+  <node id="10117" lat="40.9385888" lon="-73.8185612" version="1" />
+  <node id="10118" lat="40.9385642" lon="-73.8187044" version="1" />
+  <node id="10119" lat="40.9384576" lon="-73.8186732" version="1" />
+  <node id="10120" lat="40.9384905" lon="-73.8185002" version="1" />
+  <node id="10121" lat="40.9384814" lon="-73.8184962" version="1" />
+  <node id="10122" lat="40.9384961" lon="-73.8184057" version="1" />
+  <node id="10123" lat="40.9385685" lon="-73.8184345" version="1" />
+  <node id="10124" lat="40.9385483" lon="-73.8185458" version="1" />
+  <node id="10125" lat="40.9386747" lon="-73.8182454" version="1" />
+  <node id="10126" lat="40.9386655" lon="-73.8182427" version="1" />
+  <node id="10127" lat="40.9386519" lon="-73.8183071" version="1" />
+  <node id="10128" lat="40.9385389" lon="-73.8182682" version="1" />
+  <node id="10129" lat="40.9385875" lon="-73.8180194" version="1" />
+  <node id="10130" lat="40.938699" lon="-73.8180556" version="1" />
+  <node id="10131" lat="40.9386747" lon="-73.8181851" version="1" />
+  <node id="10132" lat="40.9386843" lon="-73.8181891" version="1" />
+  <node id="2823056984" lat="40.885919" lon="-73.8424128" version="1">
+    <tag k="addr:housenumber" v="1961" />
+    <tag k="addr:postcode" v="10466" />
+    <tag k="addr:street" v="Schieffelin Avenue" />
+  </node>
+  <node id="2823056985" lat="40.8861065" lon="-73.8426558" version="1">
+    <tag k="addr:housenumber" v="1965" />
+    <tag k="addr:postcode" v="10466" />
+    <tag k="addr:street" v="Schieffelin Avenue" />
+  </node>
+  <node id="2823056986" lat="40.8862977" lon="-73.841864" version="1">
+    <tag k="addr:housenumber" v="1981" />
+    <tag k="addr:postcode" v="10466" />
+    <tag k="addr:street" v="Schieffelin Avenue" />
+  </node>
+  <node id="2823056987" lat="40.8864693" lon="-73.8416439" version="1">
+    <tag k="addr:housenumber" v="1985" />
+    <tag k="addr:postcode" v="10466" />
+    <tag k="addr:street" v="Schieffelin Avenue" />
+  </node>
+  <node id="10137" lat="40.8864098" lon="-73.8425271" version="1" />
+  <node id="10138" lat="40.885911" lon="-73.8419179" version="1" />
+  <node id="10139" lat="40.8861576" lon="-73.8426906" version="1" />
+  <node id="10140" lat="40.8862165" lon="-73.8426105" version="1" />
+  <node id="10141" lat="40.886167" lon="-73.8425474" version="1" />
+  <node id="10142" lat="40.8860957" lon="-73.8426445" version="1" />
+  <node id="10143" lat="40.8859263" lon="-73.8424287" version="1" />
+  <node id="10144" lat="40.8860001" lon="-73.8423282" version="1" />
+  <node id="10145" lat="40.8859508" lon="-73.8422653" version="1" />
+  <node id="10146" lat="40.8858887" lon="-73.8423499" version="1" />
+  <node id="10147" lat="40.8858367" lon="-73.8422836" version="1" />
+  <node id="10148" lat="40.8857889" lon="-73.8423487" version="1" />
+  <node id="10149" lat="40.8858522" lon="-73.8424294" version="1" />
+  <node id="10150" lat="40.8857781" lon="-73.8425304" version="1" />
+  <node id="10151" lat="40.8858273" lon="-73.8425931" version="1" />
+  <node id="10152" lat="40.8858892" lon="-73.8425088" version="1" />
+  <node id="10153" lat="40.886035" lon="-73.8426946" version="1" />
+  <node id="10154" lat="40.8859859" lon="-73.8427615" version="1" />
+  <node id="10155" lat="40.886035" lon="-73.8428241" version="1" />
+  <node id="10156" lat="40.8860969" lon="-73.8427397" version="1" />
+  <node id="10157" lat="40.8861737" lon="-73.8428376" version="1" />
+  <node id="10158" lat="40.8862217" lon="-73.8427723" version="1" />
+  <node id="10159" lat="40.8850312" lon="-73.8431463" version="1">
+    <tag k="highway" v="traffic_signals" />
+  </node>
+  <node id="10160" lat="40.8851181" lon="-73.8430248" version="1" />
+  <node id="10161" lat="40.8861671" lon="-73.8415604" version="1" />
+  <node id="10162" lat="40.8863359" lon="-73.8413248" version="1" />
+  <node id="10163" lat="40.886372" lon="-73.8412732" version="1" />
+  <node id="10164" lat="40.8863932" lon="-73.841202" version="1">
+    <tag k="highway" v="traffic_signals" />
+  </node>
+  <node id="10165" lat="40.886502" lon="-73.8415407" version="1" />
+  <node id="10166" lat="40.8864404" lon="-73.8414625" version="1" />
+  <node id="10167" lat="40.8863925" lon="-73.841528" version="1" />
+  <node id="10168" lat="40.8864664" lon="-73.8416218" version="1" />
+  <node id="10169" lat="40.8863019" lon="-73.8418467" version="1" />
+  <node id="10170" lat="40.8862257" lon="-73.84175" version="1" />
+  <node id="10171" lat="40.8861784" lon="-73.8418147" version="1" />
+  <node id="10172" lat="40.8862417" lon="-73.841895" version="1" />
+  <node id="10173" lat="40.8861908" lon="-73.8419646" version="1" />
+  <node id="10174" lat="40.8862399" lon="-73.842027" version="1" />
+  <node id="10175" lat="40.8863014" lon="-73.8419429" version="1" />
+  <node id="10176" lat="40.8863783" lon="-73.8420405" version="1" />
+  <node id="10177" lat="40.8864266" lon="-73.8419744" version="1" />
+  <node id="10178" lat="40.8863634" lon="-73.8418942" version="1" />
+  <node id="10179" lat="40.8865036" lon="-73.8417025" version="1" />
+  <node id="10180" lat="40.8865547" lon="-73.8417674" version="1" />
+  <node id="10181" lat="40.8866021" lon="-73.8417026" version="1" />
+  <node id="10182" lat="40.8865363" lon="-73.8416191" version="1" />
+  <node id="10183" lat="40.8866093" lon="-73.8415194" version="1" />
+  <node id="10184" lat="40.8865617" lon="-73.841459" version="1" />
+  <node id="10185" lat="40.88518809619" lon="-73.84064287215" version="1" />
+  <node id="10186" lat="40.88741053963" lon="-73.84159237415" version="1" />
+  <way id="248157168" version="1">
+    <nd ref="10000" />
+    <nd ref="10001" />
+    <nd ref="10002" />
+    <nd ref="10003" />
+    <nd ref="10000" />
+    <tag k="addr:city" v="Brooklyn" />
+    <tag k="addr:housenumber" v="383" />
+    <tag k="addr:postcode" v="11231" />
+    <tag k="addr:street" v="Carroll Street" />
+    <tag k="amenity" v="bar" />
+    <tag k="building" v="yes" />
+    <tag k="cocktails" v="yes" />
+    <tag k="cuisine" v="gastropub" />
+    <tag k="drink:beer" v="draught" />
+    <tag k="drink:liquor" v="yes" />
+    <tag k="drink:wine" v="yes" />
+    <tag k="height" v="6.4" />
+    <tag k="name" v="Lavender Lake" />
+    <tag k="nycdoitt:bin" v="3336908" />
+    <tag k="opening_hours" v="Mo-We 16:00-00:00; Th 16:00-01:00; Fr-Sa 12:00-02:00; Su 12:00-00:00" />
+    <tag k="outdoor_seating" v="garden" />
+    <tag k="phone" v="+1-347-799-2154" />
+    <tag k="toilets" v="yes" />
+    <tag k="toilets:unisex" v="yes" />
+    <tag k="website" v="https://www.lavenderlake.com" />
+    <tag k="wheelchair" v="limited" />
+  </way>
+  <way id="1001" version="1">
+    <nd ref="10004" />
+    <nd ref="10000" />
+    <nd ref="10003" />
+    <nd ref="10005" />
+    <nd ref="10006" />
+    <nd ref="10007" />
+    <nd ref="10008" />
+    <nd ref="10009" />
+    <nd ref="10010" />
+    <nd ref="10004" />
+    <tag k="addr:housenumber" v="387" />
+    <tag k="addr:postcode" v="11231" />
+    <tag k="addr:street" v="Carroll Street" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="6.9" />
+    <tag k="nycdoitt:bin" v="3336907" />
+  </way>
+  <way id="1002" version="1">
+    <nd ref="10011" />
+    <nd ref="10012" />
+    <nd ref="10013" />
+    <nd ref="10014" />
+    <nd ref="10011" />
+    <tag k="addr:housenumber" v="80" />
+    <tag k="addr:postcode" v="11222" />
+    <tag k="addr:street" v="Beadel Street" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="4.8" />
+    <tag k="nycdoitt:bin" v="3330125" />
+  </way>
+  <way id="1003" version="1">
+    <nd ref="10015" />
+    <nd ref="10016" />
+    <nd ref="10012" />
+    <nd ref="10011" />
+    <nd ref="10015" />
+    <tag k="addr:housenumber" v="76" />
+    <tag k="addr:postcode" v="11222" />
+    <tag k="addr:street" v="Beadel Street" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="4.8" />
+    <tag k="nycdoitt:bin" v="3338284" />
+  </way>
+  <way id="1004" version="1">
+    <nd ref="10017" />
+    <nd ref="10018" />
+    <nd ref="10019" />
+    <nd ref="10020" />
+    <nd ref="10021" />
+    <nd ref="10022" />
+    <nd ref="10023" />
+    <nd ref="10024" />
+    <nd ref="10017" />
+    <tag k="addr:city" v="New York" />
+    <tag k="addr:housenumber" v="399" />
+    <tag k="addr:street" v="Park Avenue" />
+    <tag k="building" v="commercial" />
+    <tag k="building:colour" v="#919489" />
+    <tag k="building:levels" v="6" />
+    <tag k="building:part" v="yes" />
+    <tag k="height" v="30" />
+    <tag k="name" v="399 Park Avenue" />
+    <tag k="nycdoitt:bin" v="1071457" />
+    <tag k="roof:material" v="concrete" />
+    <tag k="roof:shape" v="flat" />
+    <tag k="start_date" v="1961" />
+    <tag k="wikidata" v="Q4636099" />
+    <tag k="wikipedia" v="en:399 Park Avenue" />
+  </way>
+  <way id="1005" version="1">
+    <nd ref="10028" />
+    <nd ref="10029" />
+    <nd ref="10030" />
+    <tag k="bicycle" v="yes" />
+    <tag k="cycleway" v="shared_lane" />
+    <tag k="hgv" v="destination" />
+    <tag k="highway" v="secondary" />
+    <tag k="lanes" v="2" />
+    <tag k="name" v="East 54th Street" />
+    <tag k="note" v="thru street" />
+    <tag k="oneway" v="yes" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="New York, NY" />
+    <tag k="tiger:name_base" v="54th" />
+    <tag k="tiger:name_base_1" v="54" />
+    <tag k="tiger:name_direction_prefix" v="E" />
+    <tag k="tiger:name_direction_prefix_1" v="E" />
+    <tag k="tiger:name_type" v="St" />
+    <tag k="tiger:name_type_1" v="St" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="tiger:zip_left" v="10022" />
+    <tag k="tiger:zip_right" v="10022" />
+  </way>
+  <way id="1006" version="1">
+    <nd ref="10031" />
+    <nd ref="10029" />
+    <nd ref="10032" />
+    <tag k="hgv" v="no" />
+    <tag k="highway" v="secondary" />
+    <tag k="lanes" v="3" />
+    <tag k="name" v="Park Avenue" />
+    <tag k="name:en" v="Park Avenue" />
+    <tag k="name:ru" v="&#1055;&#1072;&#1088;&#1082;-&#1040;&#1074;&#1077;&#1085;&#1102;" />
+    <tag k="old_name" v="4th Avenue" />
+    <tag k="oneway" v="yes" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="New York, NY" />
+    <tag k="tiger:name_base" v="Park" />
+    <tag k="tiger:name_type" v="Ave" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="tiger:zip_left" v="10037" />
+    <tag k="tiger:zip_right" v="10035" />
+    <tag k="wikidata" v="Q109711" />
+    <tag k="wikipedia" v="en:Park Avenue" />
+  </way>
+  <way id="1007" version="1">
+    <nd ref="10033" />
+    <nd ref="10034" />
+    <nd ref="10035" />
+    <nd ref="10036" />
+    <nd ref="10037" />
+    <nd ref="10038" />
+    <nd ref="10033" />
+    <tag k="addr:housenumber" v="14" />
+    <tag k="addr:postcode" v="10065" />
+    <tag k="addr:street" v="East 63rd Street" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="19.9" />
+    <tag k="nycdoitt:bin" v="1040912" />
+  </way>
+  <way id="265345736" version="1">
+    <nd ref="10039" />
+    <nd ref="10040" />
+    <nd ref="10041" />
+    <nd ref="10033" />
+    <nd ref="10038" />
+    <nd ref="10042" />
+    <nd ref="10039" />
+    <tag k="addr:housenumber" v="16" />
+    <tag k="addr:postcode" v="10065" />
+    <tag k="addr:street" v="East 63rd Street" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="19.0" />
+    <tag k="nycdoitt:bin" v="1040911" />
+  </way>
+  <way id="1009" version="1">
+    <nd ref="10043" />
+    <nd ref="10044" />
+    <nd ref="10045" />
+    <nd ref="10046" />
+    <nd ref="10039" />
+    <nd ref="10042" />
+    <nd ref="10047" />
+    <nd ref="10043" />
+    <tag k="addr:housenumber" v="18" />
+    <tag k="addr:postcode" v="10065" />
+    <tag k="addr:street" v="East 63rd Street" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="20.5" />
+    <tag k="nycdoitt:bin" v="1040921" />
+  </way>
+  <way id="1010" version="1">
+    <nd ref="10048" />
+    <nd ref="10049" />
+    <tag k="highway" v="residential" />
+    <tag k="name" v="East 63rd Street" />
+    <tag k="name_1" v="East 63 Street" />
+    <tag k="oneway" v="yes" />
+    <tag k="surface" v="asphalt" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="New York, NY" />
+    <tag k="tiger:name_base" v="63rd" />
+    <tag k="tiger:name_base_1" v="63" />
+    <tag k="tiger:name_direction_prefix" v="E" />
+    <tag k="tiger:name_direction_prefix_1" v="E" />
+    <tag k="tiger:name_type" v="St" />
+    <tag k="tiger:name_type_1" v="St" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="tiger:zip_left" v="10021" />
+    <tag k="tiger:zip_right" v="10021" />
+  </way>
+  <way id="1011" version="1">
+    <nd ref="10050" />
+    <nd ref="10051" />
+    <tag k="highway" v="residential" />
+    <tag k="name" v="Beadel Street" />
+    <tag k="oneway" v="yes" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="Kings, NY" />
+    <tag k="tiger:name_base" v="Beadel" />
+    <tag k="tiger:name_type" v="St" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="tiger:zip_left" v="11222" />
+    <tag k="tiger:zip_right" v="11222" />
+  </way>
+  <way id="1012" version="1">
+    <nd ref="10052" />
+    <nd ref="10053" />
+    <tag k="highway" v="residential" />
+    <tag k="name" v="Carroll Street" />
+    <tag k="source" v="image" />
+    <tag k="source_ref" v="yahoo aerial imagery" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="Kings, NY" />
+    <tag k="tiger:name_base" v="Carroll" />
+    <tag k="tiger:name_type" v="St" />
+    <tag k="tiger:zip_left" v="11215" />
+    <tag k="tiger:zip_right" v="11215" />
+  </way>
+  <way id="1013" version="1">
+    <nd ref="10054" />
+    <nd ref="10055" />
+    <nd ref="10056" />
+    <nd ref="10057" />
+    <tag k="hgv" v="no" />
+    <tag k="highway" v="motorway" />
+    <tag k="lanes" v="3" />
+    <tag k="name" v="Henry Hudson Parkway" />
+    <tag k="oneway" v="yes" />
+    <tag k="ref" v="HHP;NY 9A" />
+    <tag k="tiger:cfcc" v="A29" />
+    <tag k="tiger:county" v="New York, NY" />
+    <tag k="tiger:name_base" v="Henry Hudson" />
+    <tag k="tiger:name_base_1" v="State Highway 9A" />
+    <tag k="tiger:name_type" v="Pky" />
+    <tag k="tiger:reviewed" v="yes" />
+    <tag k="toll" v="no" />
+  </way>
+  <way id="1014" version="1">
+    <nd ref="10058" />
+    <nd ref="10059" />
+    <nd ref="10060" />
+    <nd ref="10061" />
+    <nd ref="10062" />
+    <nd ref="10063" />
+    <nd ref="10064" />
+    <nd ref="10065" />
+    <nd ref="10066" />
+    <nd ref="10067" />
+    <nd ref="10068" />
+    <nd ref="10069" />
+    <nd ref="10070" />
+    <nd ref="10071" />
+    <nd ref="10058" />
+    <tag k="addr:housenumber" v="1" />
+    <tag k="addr:postcode" v="10040" />
+    <tag k="addr:street" v="Margaret Corbin Drive" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="10.3" />
+    <tag k="layer" v="1" />
+    <tag k="nycdoitt:bin" v="1087576" />
+  </way>
+  <way id="1015" version="1">
+    <nd ref="10072" />
+    <nd ref="10073" />
+    <nd ref="10074" />
+    <nd ref="10075" />
+    <nd ref="10076" />
+    <nd ref="10077" />
+    <tag k="bicycle" v="yes" />
+    <tag k="cycleway" v="lane" />
+    <tag k="highway" v="unclassified" />
+    <tag k="name" v="Margaret Corbin Drive" />
+    <tag k="oneway" v="no" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="New York, NY" />
+    <tag k="tiger:name_base" v="Margaret Corbin" />
+    <tag k="tiger:name_type" v="Dr" />
+  </way>
+  <way id="1016" version="1">
+    <nd ref="10085" />
+    <nd ref="10084" />
+    <nd ref="10083" />
+    <nd ref="10082" />
+    <nd ref="10081" />
+    <nd ref="10080" />
+    <nd ref="10079" />
+    <nd ref="10078" />
+    <tag k="hgv" v="no" />
+    <tag k="highway" v="motorway" />
+    <tag k="lanes" v="3" />
+    <tag k="name" v="Henry Hudson Parkway" />
+    <tag k="oneway" v="yes" />
+    <tag k="ref" v="HHP;NY 9A" />
+    <tag k="tiger:cfcc" v="A15" />
+    <tag k="tiger:county" v="New York, NY" />
+    <tag k="tiger:name_base" v="Henry Hudson" />
+    <tag k="tiger:name_base_1" v="State Highway 9A" />
+    <tag k="tiger:name_type" v="Pky" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="toll" v="no" />
+  </way>
+  <way id="1017" version="1">
+    <nd ref="10088" />
+    <nd ref="10089" />
+    <nd ref="10090" />
+    <nd ref="10091" />
+    <tag k="highway" v="secondary" />
+    <tag k="lanes" v="4" />
+    <tag k="name" v="White Plains Road" />
+    <tag k="ref" v="NY 22" />
+    <tag k="tiger:cfcc" v="A31" />
+    <tag k="tiger:county" v="Westchester, NY" />
+    <tag k="tiger:name_base" v="Post White Plains" />
+    <tag k="tiger:name_type" v="Rd" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="tiger:zip_left" v="10709" />
+    <tag k="tiger:zip_right" v="10583" />
+  </way>
+  <way id="1018" version="1">
+    <nd ref="10092" />
+    <nd ref="10093" />
+    <nd ref="10094" />
+    <nd ref="10095" />
+    <nd ref="10096" />
+    <nd ref="10097" />
+    <nd ref="10098" />
+    <nd ref="10099" />
+    <nd ref="10100" />
+    <nd ref="10101" />
+    <nd ref="10102" />
+    <nd ref="10103" />
+    <nd ref="10104" />
+    <nd ref="10105" />
+    <nd ref="10106" />
+    <nd ref="10107" />
+    <nd ref="10092" />
+    <tag k="addr:city" v="Bronxville" />
+    <tag k="addr:housenumber" v="16" />
+    <tag k="addr:postcode" v="10708" />
+    <tag k="addr:state" v="NY" />
+    <tag k="addr:street" v="Dusenberry Road" />
+    <tag k="building" v="house" />
+  </way>
+  <way id="1019" version="1">
+    <nd ref="10108" />
+    <nd ref="10109" />
+    <nd ref="10110" />
+    <nd ref="10111" />
+    <nd ref="10112" />
+    <nd ref="10113" />
+    <nd ref="10114" />
+    <nd ref="10115" />
+    <nd ref="10116" />
+    <tag k="highway" v="residential" />
+    <tag k="name" v="Dusenberry Road" />
+    <tag k="tiger:cfcc" v="A41" />
+    <tag k="tiger:county" v="Westchester, NY" />
+    <tag k="tiger:name_base" v="Dusenberry" />
+    <tag k="tiger:name_type" v="Rd" />
+    <tag k="tiger:reviewed" v="no" />
+    <tag k="tiger:zip_left" v="10708" />
+  </way>
+  <way id="1020" version="1">
+    <nd ref="10117" />
+    <nd ref="10118" />
+    <nd ref="10119" />
+    <nd ref="10120" />
+    <nd ref="10121" />
+    <nd ref="10122" />
+    <nd ref="10123" />
+    <nd ref="10124" />
+    <nd ref="10117" />
+    <tag k="addr:city" v="Bronxville" />
+    <tag k="addr:housenumber" v="10" />
+    <tag k="addr:postcode" v="10708" />
+    <tag k="addr:state" v="NY" />
+    <tag k="addr:street" v="Dusenberry Road" />
+    <tag k="building" v="house" />
+  </way>
+  <way id="544773479" version="1">
+    <nd ref="10125" />
+    <nd ref="10126" />
+    <nd ref="10127" />
+    <nd ref="10128" />
+    <nd ref="10129" />
+    <nd ref="10130" />
+    <nd ref="10131" />
+    <nd ref="10132" />
+    <nd ref="10125" />
+    <tag k="addr:city" v="Bronxville" />
+    <tag k="addr:housenumber" v="12" />
+    <tag k="addr:postcode" v="10708" />
+    <tag k="addr:state" v="NY" />
+    <tag k="addr:street" v="Dusenberry Road" />
+    <tag k="building" v="house" />
+  </way>
+  <way id="1022" version="1">
+    <nd ref="10137" />
+    <nd ref="10138" />
+    <tag k="highway" v="service" />
+  </way>
+  <way id="1023" version="1">
+    <nd ref="10139" />
+    <nd ref="10140" />
+    <nd ref="10141" />
+    <nd ref="10142" />
+    <nd ref="10143" />
+    <nd ref="10144" />
+    <nd ref="10145" />
+    <nd ref="10146" />
+    <nd ref="10147" />
+    <nd ref="10148" />
+    <nd ref="10149" />
+    <nd ref="10150" />
+    <nd ref="10151" />
+    <nd ref="10152" />
+    <nd ref="10153" />
+    <nd ref="10154" />
+    <nd ref="10155" />
+    <nd ref="10156" />
+    <nd ref="10157" />
+    <nd ref="10158" />
+    <nd ref="10139" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="9.3" />
+    <tag k="nycdoitt:bin" v="2094137" />
+  </way>
+  <way id="1024" version="1">
+    <nd ref="10159" />
+    <nd ref="10160" />
+    <nd ref="10138" />
+    <nd ref="10161" />
+    <nd ref="10162" />
+    <nd ref="10163" />
+    <nd ref="10164" />
+    <tag k="highway" v="tertiary" />
+    <tag k="name" v="Schieffelin Avenue" />
+    <tag k="oneway" v="no" />
+  </way>
+  <way id="128892" version="1">
+    <nd ref="10165" />
+    <nd ref="10166" />
+    <nd ref="10167" />
+    <nd ref="10168" />
+    <nd ref="10169" />
+    <nd ref="10170" />
+    <nd ref="10171" />
+    <nd ref="10172" />
+    <nd ref="10173" />
+    <nd ref="10174" />
+    <nd ref="10175" />
+    <nd ref="10176" />
+    <nd ref="10177" />
+    <nd ref="10178" />
+    <nd ref="10179" />
+    <nd ref="10180" />
+    <nd ref="10181" />
+    <nd ref="10182" />
+    <nd ref="10183" />
+    <nd ref="10184" />
+    <nd ref="10165" />
+    <tag k="building" v="yes" />
+    <tag k="height" v="10.2" />
+    <tag k="nycdoitt:bin" v="2094138" />
+  </way>
+  <way id="1025" version="1">
+    <nd ref="10185" />
+    <nd ref="10164" />
+    <nd ref="10186" />
+    <tag k="hgv" v="local" />
+    <tag k="highway" v="secondary" />
+    <tag k="name" v="Baychester Avenue" />
+  </way>
+</osm>
