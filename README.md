@@ -40,6 +40,7 @@ Sample response:
         "county": "Westchester County",
         "locality": "Eastchester",
         "town": "Town of Eastchester",
+        "postcode": "10583",
         "road": "White Plains Road",
         "house_number": "750"
     },
