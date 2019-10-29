@@ -16,16 +16,17 @@ update geocoder_polygon poly set building_id = (
 -- 2. Move addresses to biggest buildings
 update geocoder_buildings building
 set housenumber = poly."addr:housenumber",
+    postcode = coalesce(poly."addr:postcode", postcode),
     street = poly."addr:street"
 from geocoder_polygon poly
 where building.osm_id = poly.building_id;
 
 -- 3. Convert the rest of the polygons into points
 insert into geocoder_addresses
-    (osm_id, osm_type, name, street, housenumber, geom, building_id, is_poi)
+    (osm_id, osm_type, name, street, housenumber, postcode, geom, building_id, is_poi)
 select osm_id, 'way',
     coalesce("name", "addr:housename"),
-    "addr:street", "addr:housenumber",
+    "addr:street", "addr:housenumber", "addr:postcode",
     ST_PointOnSurface(way), (
         -- Note that here we look for the smallest building that encloses the polygon
         -- where as building_id is the largest building inside the polygon.

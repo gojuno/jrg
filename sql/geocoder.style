@@ -3,6 +3,8 @@ node,way   addr:housename      text  polygon
 node,way   addr:housenumber    text  polygon
 way        addr:interpolation  text  polygon
 node,way   addr:street         text  polygon
+node,way   addr:postcode       text  polygon
+node,way   postal_code         text  polygon
 
 node,way   building     text         polygon
 node,way   boundary     text         polygon

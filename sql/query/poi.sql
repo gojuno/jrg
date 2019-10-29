@@ -5,6 +5,7 @@ create or replace function geocode_poi(pt_lon numeric, pt_lat numeric) returns t
     rosm_id bigint,
     rstreet text,
     rhousenumber text,
+    rpostcode text,
     rlon double precision,
     rlat double precision,
     rname text,
@@ -41,7 +42,8 @@ BEGIN
 
     ), close_poi as (
         -- Buildings
-        select 'building' as type, osm_id, 'way' as osm_type, name, street, housenumber,
+        select 'building' as type, osm_id, 'way' as osm_type, name,
+               street, housenumber, postcode,
                geom, null::bigint as building_id, false as is_poi,
                ST_ClosestPoint(geom, pt) as center,
                ST_Distance(geom, pt) + 1e-6 as distance -- adding 1 cm to prefer address points inside the building
@@ -125,20 +127,20 @@ BEGIN
 
     ), united as (
         -- Priority: POI, then the enclosing building, then the closest road
-        select type, osm_id, osm_type, center, name, street, housenumber from pois
+        select type, osm_id, osm_type, center, name, street, housenumber, postcode from pois
         union all
         -- put "pt" instead of "center" to nullify the distance to the enclosing building
-        select type, osm_id, 'way', pt, name, street, housenumber from building
+        select type, osm_id, 'way', pt, name, street, housenumber, postcode from building
         union all
-        select type, osm_id, 'way', closest, null, name, null from road
+        select type, osm_id, 'way', closest, null, name, null, null from road
         union all
-        select type, osm_id, osm_type, center, name, street, housenumber from anyclosest
+        select type, osm_id, osm_type, center, name, street, housenumber, postcode from anyclosest
         union all
-        select type, osm_id, 'way', closest, null, name, null from roads
+        select type, osm_id, 'way', closest, null, name, null, null from roads
     )
 
     select type, case when osm_id < 0 then 'relation' else osm_type end, abs(osm_id),
-        street, housenumber,
+        street, housenumber, postcode,
         ST_X(ST_Transform(center, 4326)),
         ST_Y(ST_Transform(center, 4326)),
         name, trunc(ST_Distance(center, pt)::numeric * cos_mod::numeric, 2)

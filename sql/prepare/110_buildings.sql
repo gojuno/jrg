@@ -5,6 +5,7 @@ drop table if exists geocoder_buildings;
 create table geocoder_buildings as
 select osm_id, coalesce("name", "addr:housename") as name,
     "addr:street" as street, "addr:housenumber" as housenumber,
+    coalesce("addr:postcode", postal_code) as postcode,
     way as geom, ST_Centroid(way) as center, way_area as area
 from geocoder_polygon
 where building is not null;

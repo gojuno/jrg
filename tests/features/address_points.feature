@@ -16,11 +16,13 @@ Feature: Address Points
         Then address is 2 Central Park South
         And object is node 2708081461
 
+    @wip
     Scenario: Building takes address from a polygon and is closed than building w/address point
         Possible good answer is 695 Park Avenue, but there is an address point in 39 m
         When location is -73.96503, 40.76907
         Then address is 681 Park Avenue
 
+    @wip
     Scenario: Address point instead of closer building with address from a polygon
         When location is -73.96496, 40.76906
         Then address is 701 Park Avenue

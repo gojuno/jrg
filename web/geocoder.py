@@ -60,10 +60,11 @@ class ReverseGeocoder(Resource):
             'address': {
                 'road': result[3],
                 'house_number': result[4],
+                'postcode': result[5],
             },
-            'lon': None if result[5] is None else str(result[5]),
-            'lat': None if result[6] is None else str(result[6]),
-            'name': result[7],
+            'lon': None if result[6] is None else str(result[6]),
+            'lat': None if result[7] is None else str(result[7]),
+            'name': result[8],
         }
         for k, v in data['address'].items():
             if v and ';' in v:
