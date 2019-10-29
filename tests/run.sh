@@ -16,4 +16,4 @@ else
 fi
 
 export PYTHONPATH="$HERE"
-"$VENV/bin/behave" -f formatter:BareFormatter ${TAGS-} $@ "$HERE"
+"$VENV/bin/behave" -f formatter:BareFormatter --tags ~unit ${TAGS-} $@ "$HERE"

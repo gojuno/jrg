@@ -1,4 +1,4 @@
-@simple
+@simple @unit
 Feature: Simple addressing
 
     Scenario: Inside a simple building with address and no POIs
