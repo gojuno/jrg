@@ -8,4 +8,4 @@ PG_USER = os.getenv('PGUSER', 'postgres')
 
 # These are pretty much standard.
 PG_PORT = os.getenv('PGPORT', '5432')
-PG_DATABASE = os.getenv('PGDATABASE', 'geocoder')
+PG_DATABASE = os.getenv('PGDATABASE', 'postgres')
