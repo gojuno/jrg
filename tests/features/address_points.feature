@@ -1,4 +1,4 @@
-@complex
+@unit @complex
 Feature: Address Points
 
     Scenario: Prefer address point with the same street as nearby

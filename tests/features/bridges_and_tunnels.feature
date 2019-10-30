@@ -1,3 +1,4 @@
+@unit
 Feature: Bridges and Tunnels
     We actually test that despite them being in the roads database,
     they do not affect geocoding inside a city. Other tests certainly didn't broke

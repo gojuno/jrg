@@ -3,6 +3,7 @@ import json
 from urllib.error import HTTPError
 from urllib.request import urlopen
 from urllib.parse import urlencode
+import xml.etree.ElementTree as etree
 
 
 class SimpleGeocoder:
@@ -36,5 +37,16 @@ class SimpleGeocoder:
         return self._request(osm_type=osm_type, osm_id=osm_id, admin=0)
 
 
+def load_coords():
+    coords = {}
+    osm = etree.parse(os.path.join(os.path.dirname(__file__), 'unit_data.osm')).getroot()
+    for node in osm.findall('node'):
+        tags = {t.get('k'): t.get('v') for t in node.findall('tag')}
+        if 'sid' in tags:
+            coords['sid'] = (node.get('lon'), node.get('lat'))
+    return coords
+
+
 def before_all(context):
     context.geocoder = SimpleGeocoder()
+    context.points = load_coords()
