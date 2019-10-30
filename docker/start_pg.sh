@@ -1,3 +1,3 @@
 #!/bin/sh
 chmod 700 /pgdata/
-postgres
+pg_ctl -D /pgdata/ -w start

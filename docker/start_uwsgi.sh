@@ -4,4 +4,4 @@ for i in `seq 1 20`; do
   psql -U postgres -c 'select 1;' && break
   sleep 1
 done
-/usr/local/bin/uwsgi --ini /geocoder/uwsgi.ini
+/usr/local/bin/uwsgi --ini /usr/src/jrg/web/uwsgi.ini

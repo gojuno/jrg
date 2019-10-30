@@ -16,7 +16,7 @@ Starting it should be simple:
 
 ### Docker container
 
-There will be a docker container setup soon.
+Check docker container [section](./docker/README.md)
 
 ## Usage
 
