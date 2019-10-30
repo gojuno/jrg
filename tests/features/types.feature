@@ -1,4 +1,4 @@
-@type
+@unit @type
 Feature: Response has an appropriate type
 
     Scenario: Inside a building with no points, close to other building

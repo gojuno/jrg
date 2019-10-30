@@ -1,4 +1,4 @@
-@distance
+@unit @distance
 Feature: Distances
 
     Scenario: Inside a building, return same point

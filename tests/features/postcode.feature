@@ -1,3 +1,4 @@
+@unit
 Feature: Postal Codes
 
     Scenario: addr:postcode works

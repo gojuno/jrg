@@ -1,4 +1,4 @@
-@poi
+@unit @poi
 Feature: We don't need no points of interest
     Scenario: Ignore a lone-standing POI
         When location is -73.87102, 40.93029

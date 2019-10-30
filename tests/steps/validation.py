@@ -176,6 +176,11 @@ def validate_address(context, address):
     validate_row_2way(context, {'house': house, 'road': road})
 
 
+@then('postcode is {postcode}')
+def validate_postcode(context, postcode):
+    validate_row_2way(context, {'postcode': postcode})
+
+
 @then('type is {typ:w}')
 def validate_type(context, typ):
     validate_row_2way(context, {'type': typ})

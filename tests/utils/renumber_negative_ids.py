@@ -10,12 +10,25 @@ if len(sys.argv) < 3:
 
 osm = etree.parse(sys.argv[1]).getroot()
 
-new_id = {'node': 10000, 'way': 1000, 'relation': 1}
 id_map = {}
+def_not_exist_neg_id = -10000000
+existing_ids = {k: set() for k in ('node', 'way', 'relation')}
+for obj in osm:
+    oid = int(obj.get('id'))
+    if oid > 0:
+        if oid in existing_ids[obj.tag]:
+            # Found a duplicate id
+            id_map[(obj.tag, obj.get('id'))] = def_not_exist_neg_id
+            def_not_exist_neg_id -= 1
+        existing_ids[obj.tag].add(int(obj.get('id')))
+
+new_id = {'node': 10000, 'way': 1000, 'relation': 1}
 for obj in osm:
     if obj.tag in ('node', 'way', 'relation'):
         k = (obj.tag, obj.get('id'))
         if obj.get('id')[0] == '-':
+            while new_id[obj.tag] in existing_ids[obj.tag]:
+                new_id[obj.tag] += 1
             id_map[k] = new_id[obj.tag]
             new_id[obj.tag] += 1
             obj.set('id', str(id_map[k]))
@@ -28,7 +41,8 @@ for obj in osm:
     if obj.get('action') == 'delete' or obj.get('visible') == 'false':
         osm.remove(obj)
         continue
-    del obj.attrib['action']
+    if 'action' in obj.attrib:
+        del obj.attrib['action']
     if 'version' not in obj.attrib:
         obj.set('version', '1')
     if obj.tag == 'way':
