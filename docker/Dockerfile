@@ -5,7 +5,7 @@ MAINTAINER Juno Inc <gojuno.com>
 # that wasn't maintained any more and we do not need some migration stuff from it
 
 ENV POSTGIS_MAJOR 3
-ENV POSTGIS_VERSION 3.0.0+dfsg-1.pgdg100+1
+ENV POSTGIS_VERSION 3.0.0+dfsg-2~exp1.pgdg100+1
 
 #TODO switch to versions when we will have they similar with mdillon postgis repo
 # https://hub.docker.com/r/mdillon/postgis/dockerfile
