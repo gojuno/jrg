@@ -1,24 +1,16 @@
 <osm version="0.6" upload="false" generator="JOSM">
-  <node id="11922" lat="40.64691295577" lon="-74.3805314827" version="1">
-    <tag k="census:population" v="23246;2006"/>
-    <tag k="ele" v="50"/>
-    <tag k="gnis:Class" v="Populated Place"/>
-    <tag k="gnis:County" v="Union"/>
-    <tag k="gnis:County_num" v="039"/>
-    <tag k="gnis:ST_alpha" v="NJ"/>
-    <tag k="gnis:ST_num" v="34"/>
-    <tag k="gnis:id" v="880427"/>
-    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
-    <tag k="is_in" v="Union,New Jersey,N.J.,NJ,USA"/>
-    <tag k="name" v="Scotch Plains"/>
-    <tag k="place" v="town"/>
-    <tag k="population" v="23246"/>
-    <tag k="wikidata" v="Q262609"/>
+  <node id="11927" lat="40.95187369127" lon="-73.62997747192" version="1">
+    <tag k="feature" v="errors"/>
+    <tag k="name" v="State but no object should return state OSM id"/>
+    <tag k="sid" v="error_state_only"/>
+    <tag k="skip" v="yes"/>
   </node>
-  <node id="11923" lat="40.65869911683" lon="-74.38293465614" version="1"/>
-  <node id="11924" lat="40.64548016877" lon="-74.3541813755" version="1"/>
-  <node id="11925" lat="40.5899059213" lon="-74.39126023293" version="1"/>
-  <node id="11926" lat="40.60860956835" lon="-74.43185814857" version="1"/>
+  <node id="11928" lat="40.89888846921" lon="-73.73570050291" version="1">
+    <tag k="feature" v="errors"/>
+    <tag k="name" v="Object type should be way/relation (not w/r) for admin queries"/>
+    <tag k="sid" v="error_admin"/>
+    <tag k="skip" v="yes"/>
+  </node>
   <node id="10000" version="1" lat="40.6785188" lon="-73.9897708"/>
   <node id="10001" version="1" lat="40.6785532" lon="-73.9898567"/>
   <node id="10002" version="1" lat="40.6787316" lon="-73.9897332"/>
@@ -3745,6 +3737,26 @@
     <tag k="population" v="241789"/>
     <tag k="wikidata" v="Q26339"/>
   </node>
+  <node id="11922" version="1" lat="40.64691295577" lon="-74.3805314827">
+    <tag k="census:population" v="23246;2006"/>
+    <tag k="ele" v="50"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Union"/>
+    <tag k="gnis:County_num" v="039"/>
+    <tag k="gnis:ST_alpha" v="NJ"/>
+    <tag k="gnis:ST_num" v="34"/>
+    <tag k="gnis:id" v="880427"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Union,New Jersey,N.J.,NJ,USA"/>
+    <tag k="name" v="Scotch Plains"/>
+    <tag k="place" v="town"/>
+    <tag k="population" v="23246"/>
+    <tag k="wikidata" v="Q262609"/>
+  </node>
+  <node id="11923" version="1" lat="40.65869911683" lon="-74.38293465614"/>
+  <node id="11924" version="1" lat="40.64548016877" lon="-74.3541813755"/>
+  <node id="11925" version="1" lat="40.5899059213" lon="-74.39126023293"/>
+  <node id="11926" version="1" lat="40.60860956835" lon="-74.43185814857"/>
   <node id="1705829296" version="1" lat="40.9515453" lon="-73.8277579">
     <tag k="addr:housenumber" v="25"/>
     <tag k="addr:postcode" v="10707"/>
@@ -3803,22 +3815,6 @@
     <tag k="addr:housenumber" v="305;307;309;311;313;315"/>
     <tag k="entrance" v="yes"/>
   </node>
-  <way id="1243" version="1">
-    <nd ref="11837"/>
-    <nd ref="11923"/>
-    <nd ref="11924"/>
-    <nd ref="11925"/>
-    <nd ref="11926"/>
-    <nd ref="11838"/>
-  </way>
-  <way id="1244" version="1">
-    <nd ref="11838"/>
-    <nd ref="11837"/>
-  </way>
-  <way id="1245" version="1">
-    <nd ref="11837"/>
-    <nd ref="11849"/>
-  </way>
   <way id="1000" version="1">
     <nd ref="10135"/>
     <nd ref="10136"/>
@@ -8361,6 +8357,22 @@
     <nd ref="11900"/>
     <nd ref="11863"/>
   </way>
+  <way id="1243" version="1">
+    <nd ref="11837"/>
+    <nd ref="11923"/>
+    <nd ref="11924"/>
+    <nd ref="11925"/>
+    <nd ref="11926"/>
+    <nd ref="11838"/>
+  </way>
+  <way id="1244" version="1">
+    <nd ref="11838"/>
+    <nd ref="11837"/>
+  </way>
+  <way id="1245" version="1">
+    <nd ref="11837"/>
+    <nd ref="11849"/>
+  </way>
   <way id="128892" version="1">
     <nd ref="10165"/>
     <nd ref="10166"/>
@@ -8488,21 +8500,6 @@
     <tag k="addr:street" v="Dusenberry Road"/>
     <tag k="building" v="house"/>
   </way>
-  <relation id="19" version="1">
-    <member type="way" ref="1243" role="outer"/>
-    <member type="way" ref="1244" role="outer"/>
-    <tag k="admin_level" v="6"/>
-    <tag k="boundary" v="administrative"/>
-    <tag k="is_in:state" v="New Jersey"/>
-    <tag k="name" v="Union County"/>
-    <tag k="nist:fips_code" v="34039"/>
-    <tag k="nist:state_fips" v="34"/>
-    <tag k="population" v="555786"/>
-    <tag k="source:population" v="Population Estimates Program"/>
-    <tag k="type" v="boundary"/>
-    <tag k="wikidata" v="Q502459"/>
-    <tag k="wikipedia" v="en:Union County, New Jersey"/>
-  </relation>
   <relation id="1" version="1">
     <member type="way" ref="1071" role="outer"/>
     <member type="way" ref="1072" role="outer"/>
@@ -8740,5 +8737,20 @@
     <tag k="name" v="Jersey City"/>
     <tag k="place" v="city"/>
     <tag k="type" v="multipolygon"/>
+  </relation>
+  <relation id="19" version="1">
+    <member type="way" ref="1243" role="outer"/>
+    <member type="way" ref="1244" role="outer"/>
+    <tag k="admin_level" v="6"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="is_in:state" v="New Jersey"/>
+    <tag k="name" v="Union County"/>
+    <tag k="nist:fips_code" v="34039"/>
+    <tag k="nist:state_fips" v="34"/>
+    <tag k="population" v="555786"/>
+    <tag k="source:population" v="Population Estimates Program"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q502459"/>
+    <tag k="wikipedia" v="en:Union County, New Jersey"/>
   </relation>
 </osm>
