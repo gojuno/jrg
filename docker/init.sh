@@ -19,10 +19,10 @@ for i in `seq 1 120`; do
   sleep 1
 done
 
-${psql[@]} -c "create extension postgis"
+${psql[@]} -c "create extension postgis;"
 
-osm2pgsql --slim --drop --number-processes 4 --style=/usr/src/jrg/sql/geocoder.style -U postgres -d postgres --prefix geocoder $1
-
+osm2pgsql --slim --drop --number-processes 4 --style=${JRG_SRC}/sql/geocoder.style \
+    -U postgres -d postgres --prefix geocoder $1
 
 for f in ${JRG_SRC}/sql/prepare/* ${JRG_SRC}/sql/query/*; do
 	echo "$0: running $f"; "${psql[@]}" < "$f"; echo
@@ -38,5 +38,5 @@ su postgres -c "pg_ctl -D \"$PGDATA\" \
      -w start"
 
 "${psql[@]}" --username postgres -c "checkpoint;"
-sleep 5;
+sleep 5
 su postgres -c "pg_ctl -D "$PGDATA" -w stop"
