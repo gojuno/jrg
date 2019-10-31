@@ -859,7 +859,6 @@
     <tag k="name" v="East Harlem"/>
     <tag k="sid" v="neighbourhoods01"/>
     <tag k="then" v="neighbourhood is East Harlem, Manhattan"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10337" version="1" lat="40.8218" lon="-73.93962">
     <tag k="admin" v="yes"/>
@@ -867,24 +866,33 @@
     <tag k="name" v="Harlem far from the place point"/>
     <tag k="sid" v="neighbourhoods02"/>
     <tag k="then" v="neighbourhood is Harlem, Manhattan"/>
-    <tag k="wip" v="yes"/>
   </node>
-  <node id="10338" version="1" lat="40.50706" lon="-74.24964">
-    <tag k="admin" v="yes"/>
-    <tag k="big" v="yes"/>
-    <tag k="feature" v="neighbourhoods"/>
-    <tag k="name" v="A neighbourhood on Staten Island"/>
-    <tag k="sid" v="neighbourhoods03"/>
-    <tag k="then" v="neighbourhood is Tottenville, Staten Island"/>
-    <tag k="wip" v="yes"/>
+  <node id="10338" version="1" lat="40.7498243" lon="-73.7976337">
+    <tag k="ele" v="13"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="971983"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="New York,N.Y.,NY,USA"/>
+    <tag k="is_in:country" v="USA"/>
+    <tag k="is_in:country_code" v="US"/>
+    <tag k="is_in:state" v="New York"/>
+    <tag k="is_in:state_code" v="NY"/>
+    <tag k="name" v="Queens"/>
+    <tag k="name:en" v="Queens"/>
+    <tag k="name:ru" v="Куинс"/>
+    <tag k="place" v="suburb"/>
+    <tag k="wikidata" v="Q18424"/>
   </node>
-  <node id="10339" version="1" lat="40.82186" lon="-73.8906">
+  <node id="10339" version="1" lat="40.82523741824" lon="-73.83292177734">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="More than 1 km from any neighbourhood"/>
     <tag k="sid" v="neighbourhoods04"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10340" version="1" lat="40.84563" lon="-73.87859">
     <tag k="admin" v="yes"/>
@@ -892,7 +900,6 @@
     <tag k="name" v="Suburbs are not mixed with neighbourhoods"/>
     <tag k="sid" v="neighbourhoods05"/>
     <tag k="then" v="neighbourhood is Lambert Houses, The Bronx"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10341" version="1" lat="40.90294" lon="-73.86495">
     <tag k="admin" v="yes"/>
@@ -900,7 +907,6 @@
     <tag k="name" v="NYC boundary cuts neighbourhoods"/>
     <tag k="sid" v="neighbourhoods06"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10342" version="1" lat="40.71584" lon="-73.86722">
     <tag k="admin" v="yes"/>
@@ -908,7 +914,6 @@
     <tag k="name" v="Polygonal neighbourhood"/>
     <tag k="sid" v="neighbourhoods07"/>
     <tag k="then" v="neighbourhood is Middle Village, Queens"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10343" version="1" lat="40.72768" lon="-73.78645">
     <tag k="admin" v="yes"/>
@@ -916,7 +921,6 @@
     <tag k="name" v="Polygonal neighbourhood cuts point neighbourhoods"/>
     <tag k="sid" v="neighbourhoods08"/>
     <tag k="then" v="neighbourhood is Fresh Meadows, Queens"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10344" version="1" lat="40.70779" lon="-73.90308">
     <tag k="admin" v="yes"/>
@@ -925,7 +929,6 @@
     <tag k="note" v="Could be Fresh Pond, but nope"/>
     <tag k="sid" v="neighbourhoods09"/>
     <tag k="then" v="neighbourhood is Ridgewood, Queens"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10345" version="1" lat="40.69187" lon="-73.90166">
     <tag k="admin" v="yes"/>
@@ -933,16 +936,14 @@
     <tag k="name" v="Same polygon but far from points"/>
     <tag k="sid" v="neighbourhoods10"/>
     <tag k="then" v="neighbourhood is Ridgewood, Queens"/>
-    <tag k="wip" v="yes"/>
   </node>
-  <node id="10346" version="1" lat="40.65154" lon="-73.83259">
+  <node id="10346" version="1" lat="40.56226801653" lon="-73.80598248657">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Bay does not cut a neighbourhood"/>
     <tag k="note" v="Though do we want it?"/>
     <tag k="sid" v="neighbourhoods11"/>
     <tag k="then" v="neighbourhood is Hamilton Beach, Queens"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10347" version="1" lat="40.75716" lon="-74.02947">
     <tag k="admin" v="yes"/>
@@ -950,7 +951,6 @@
     <tag k="name" v="Neighbourhoods with centre outisde a city are removed"/>
     <tag k="sid" v="neighbourhoods12"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10348" version="1" lat="40.5917" lon="-73.7407">
     <tag k="admin" v="yes"/>
@@ -958,15 +958,13 @@
     <tag k="name" v="No neighbourhoods outside a city"/>
     <tag k="sid" v="neighbourhoods13"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
-    <tag k="wip" v="yes"/>
   </node>
-  <node id="10349" version="1" lat="40.5956" lon="-73.7422">
+  <node id="10349" version="1" lat="40.59409285581" lon="-73.74144361706">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="But there are in a city"/>
     <tag k="sid" v="neighbourhoods14"/>
     <tag k="then" v="neighbourhood is Roy Reuther Houses"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10350" version="1" lat="40.7" lon="-73.8">
     <tag k="admin" v="yes"/>
@@ -3644,7 +3642,7 @@
   <node id="11891" version="1" lat="40.87172840424" lon="-73.74469791412"/>
   <node id="11892" version="1" lat="40.94930705685" lon="-73.6197284317"/>
   <node id="11893" version="1" lat="41.05976406577" lon="-73.68115540708"/>
-  <node id="11894" version="1" lat="40.51066747239" lon="-73.69628974915"/>
+  <node id="11894" version="1" lat="40.59648909395" lon="-73.71671745301"/>
   <node id="11895" version="1" lat="40.71307521602" lon="-73.7233946435"/>
   <node id="11896" version="1" lat="40.70797052225" lon="-73.87996707916"/>
   <node id="11897" version="1" lat="40.7358118371" lon="-73.94348178864"/>
@@ -3757,6 +3755,597 @@
     <tag k="sid" v="error_admin"/>
     <tag k="skip" v="yes"/>
   </node>
+  <node id="11929" version="1" lat="40.898155" lon="-73.8673573">
+    <tag k="ele" v="43"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Bronx"/>
+    <tag k="gnis:County_num" v="005"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="971661"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Bronx,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Woodlawn"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q8032975"/>
+    <tag k="wikipedia" v="en:Woodlawn, Bronx"/>
+  </node>
+  <node id="11930" version="1" lat="40.5955556" lon="-73.7422222">
+    <tag k="ele" v="1"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="2079415"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Roy Reuther Houses"/>
+    <tag k="place" v="neighbourhood"/>
+  </node>
+  <node id="11931" version="1" lat="40.59218719921" lon="-73.74864595413"/>
+  <node id="11932" version="1" lat="40.75922052016" lon="-74.02570728779">
+    <tag k="admin" v="yes"/>
+    <tag k="feature" v="neighbourhoods"/>
+    <tag k="name" v="Removed completely"/>
+    <tag k="sid" v="neighbourhoods12a"/>
+    <tag k="then" v="response does not contain: neighbourhood"/>
+  </node>
+  <node id="11933" version="1" lat="40.7080556" lon="-73.9141667">
+    <tag k="ele" v="27"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="2079375"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Ridgewood"/>
+    <tag k="old_name" v="Old Germania Heights"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q7332840"/>
+  </node>
+  <node id="11934" version="1" lat="40.7070471" lon="-73.90347">
+    <tag k="ele" v="34"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="950720"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Fresh Pond"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q5503003"/>
+    <tag k="wikipedia" v="en:Fresh Pond, Queens"/>
+  </node>
+  <node id="11935" version="1" lat="40.7040104" lon="-73.8915251">
+    <tag k="ele" v="30"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="972513"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Fresh Pond Junction"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q5503007"/>
+    <tag k="wikipedia" v="en:Fresh Pond Junction"/>
+  </node>
+  <node id="11936" version="1" lat="40.7139071" lon="-73.9238621"/>
+  <node id="11937" version="1" lat="40.7128398" lon="-73.9222082"/>
+  <node id="11938" version="1" lat="40.7109804" lon="-73.9215367"/>
+  <node id="11939" version="1" lat="40.7104294" lon="-73.920771"/>
+  <node id="11940" version="1" lat="40.7093909" lon="-73.9219061"/>
+  <node id="11941" version="1" lat="40.7074198" lon="-73.9185461">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11942" version="1" lat="40.7073807" lon="-73.9184827">
+    <tag k="highway" v="stop"/>
+  </node>
+  <node id="11943" version="1" lat="40.707343" lon="-73.9184177">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11944" version="1" lat="40.7038765" lon="-73.9125563"/>
+  <node id="11945" version="1" lat="40.7034226" lon="-73.9117871"/>
+  <node id="11946" version="1" lat="40.7023672" lon="-73.9128975"/>
+  <node id="11947" version="1" lat="40.701049" lon="-73.9106813"/>
+  <node id="11948" version="1" lat="40.700643" lon="-73.9110919"/>
+  <node id="11949" version="1" lat="40.7004415" lon="-73.9112957"/>
+  <node id="11950" version="1" lat="40.7003567" lon="-73.9113814"/>
+  <node id="11951" version="1" lat="40.6999312" lon="-73.9118119"/>
+  <node id="11952" version="1" lat="40.6989096" lon="-73.9099689"/>
+  <node id="11953" version="1" lat="40.6988649" lon="-73.9098858"/>
+  <node id="11954" version="1" lat="40.6987721" lon="-73.9097135"/>
+  <node id="11955" version="1" lat="40.6986795" lon="-73.9095414"/>
+  <node id="11956" version="1" lat="40.6956953" lon="-73.9042787"/>
+  <node id="11957" version="1" lat="40.6941198" lon="-73.9058005"/>
+  <node id="11958" version="1" lat="40.6917447" lon="-73.9016241"/>
+  <node id="11959" version="1" lat="40.6933923" lon="-73.9004822"/>
+  <node id="11960" version="1" lat="40.693344" lon="-73.9003976"/>
+  <node id="11961" version="1" lat="40.6970024" lon="-73.8981544"/>
+  <node id="11962" version="1" lat="40.7011871" lon="-73.893994"/>
+  <node id="11963" version="1" lat="40.7043892" lon="-73.8913725"/>
+  <node id="11964" version="1" lat="40.706153" lon="-73.8908743"/>
+  <node id="11965" version="1" lat="40.7082693" lon="-73.8902766"/>
+  <node id="11966" version="1" lat="40.708305" lon="-73.8902665"/>
+  <node id="11967" version="1" lat="40.7121931" lon="-73.8991977"/>
+  <node id="11968" version="1" lat="40.712697" lon="-73.900596">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="11969" version="1" lat="40.7127113" lon="-73.900975"/>
+  <node id="11970" version="1" lat="40.7127149" lon="-73.9010718"/>
+  <node id="11971" version="1" lat="40.7127404" lon="-73.9017342"/>
+  <node id="11972" version="1" lat="40.7128316" lon="-73.9041511"/>
+  <node id="11973" version="1" lat="40.712837" lon="-73.9042937"/>
+  <node id="11974" version="1" lat="40.7128863" lon="-73.9056172"/>
+  <node id="11975" version="1" lat="40.7129026" lon="-73.9060758">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="11976" version="1" lat="40.7133266" lon="-73.9129661">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="11977" version="1" lat="40.7134591" lon="-73.915056"/>
+  <node id="11978" version="1" lat="40.7135349" lon="-73.9163384"/>
+  <node id="11979" version="1" lat="40.7137206" lon="-73.9195099"/>
+  <node id="11980" version="1" lat="40.7137483" lon="-73.9196325"/>
+  <node id="11981" version="1" lat="40.7139459" lon="-73.923801"/>
+  <node id="11982" version="1" lat="40.7273247" lon="-73.7865221">
+    <tag k="ele" v="20"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="968329"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Utopia"/>
+    <tag k="place" v="neighbourhood"/>
+  </node>
+  <node id="11983" version="1" lat="40.7401275" lon="-73.7883732"/>
+  <node id="11984" version="1" lat="40.7386763" lon="-73.7876901">
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="11985" version="1" lat="40.7383408" lon="-73.7885236"/>
+  <node id="11986" version="1" lat="40.7305982" lon="-73.7849452"/>
+  <node id="11987" version="1" lat="40.7299524" lon="-73.7876065"/>
+  <node id="11988" version="1" lat="40.7298828" lon="-73.7875773"/>
+  <node id="11989" version="1" lat="40.7275005" lon="-73.7865784"/>
+  <node id="11990" version="1" lat="40.7309721" lon="-73.7749414"/>
+  <node id="11991" version="1" lat="40.7318263" lon="-73.7702373">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="11992" version="1" lat="40.7326994" lon="-73.7708397"/>
+  <node id="11993" version="1" lat="40.7339359" lon="-73.7716929"/>
+  <node id="11994" version="1" lat="40.7429994" lon="-73.7756629">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="11995" version="1" lat="40.742197" lon="-73.78085"/>
+  <node id="11996" version="1" lat="40.7421207" lon="-73.781123"/>
+  <node id="11997" version="1" lat="40.7406459" lon="-73.7864982"/>
+  <node id="11998" version="1" lat="40.730543469" lon="-73.87636188984"/>
+  <node id="11999" version="1" lat="40.71392333003" lon="-73.85923866749"/>
+  <node id="12000" version="1" lat="40.70858839401" lon="-73.87134079456"/>
+  <node id="12001" version="1" lat="40.70858839401" lon="-73.87988094807"/>
+  <node id="12002" version="1" lat="40.71990835918" lon="-73.90541557789"/>
+  <node id="12003" version="1" lat="40.56001112424" lon="-73.82525957187">
+    <tag k="ele" v="1"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="953302"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Howard Beach"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q58981"/>
+    <tag k="wikipedia" v="en:Howard Beach, Queens"/>
+  </node>
+  <node id="12004" version="1" lat="40.56998834424" lon="-73.80066450244">
+    <tag k="ele" v="1"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="952092"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Hamilton Beach"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q59022"/>
+    <tag k="wikipedia" v="en:Hamilton Beach, Queens"/>
+  </node>
+  <node id="12005" version="1" lat="40.55906939379" lon="-73.79362123489"/>
+  <node id="12006" version="1" lat="40.55724352628" lon="-73.79619615555"/>
+  <node id="12007" version="1" lat="40.57484803069" lon="-73.81713884354"/>
+  <node id="12008" version="1" lat="40.57915064967" lon="-73.81662385941"/>
+  <node id="12013" version="1" lat="40.8427778" lon="-73.8788889">
+    <tag k="ele" v="12"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Bronx"/>
+    <tag k="gnis:County_num" v="005"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="2072537"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Bronx,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Lambert Houses"/>
+    <tag k="place" v="neighbourhood"/>
+  </node>
+  <node id="12014" version="1" lat="40.8078786" lon="-73.9454154">
+    <tag k="ele" v="8"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="New York"/>
+    <tag k="gnis:County_num" v="061"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="952233"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="New York,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="Harlem"/>
+    <tag k="name:ru" v="Гарлем"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q189074"/>
+  </node>
+  <node id="12015" version="1" lat="40.7947222" lon="-73.9425">
+    <tag k="ele" v="5"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="New York"/>
+    <tag k="gnis:County_num" v="061"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="2083753"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="New York,New York,N.Y.,NY,USA"/>
+    <tag k="name" v="East Harlem"/>
+    <tag k="name:ru" v="Ист-Гарлем"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q1069687"/>
+  </node>
+  <node id="12016" version="1" lat="40.818338" lon="-73.9337102"/>
+  <node id="12017" version="1" lat="40.805774" lon="-73.9427358"/>
+  <node id="12018" version="1" lat="40.806444" lon="-73.9443344"/>
+  <node id="12019" version="1" lat="40.8039102" lon="-73.9461905"/>
+  <node id="12020" version="1" lat="40.8032443" lon="-73.9446348"/>
+  <node id="12021" version="1" lat="40.8006739" lon="-73.9464872"/>
+  <node id="12022" version="1" lat="40.7982204" lon="-73.9482443">
+    <tag k="crossing" v="marked"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="12023" version="1" lat="40.7971081" lon="-73.949054">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12024" version="1" lat="40.819493" lon="-73.9337397"/>
+  <node id="12025" version="1" lat="40.8197751" lon="-73.933745"/>
+  <node id="12026" version="1" lat="40.8197914" lon="-73.9338684"/>
+  <node id="12027" version="1" lat="40.8200207" lon="-73.9338711"/>
+  <node id="12028" version="1" lat="40.8227711" lon="-73.9339676"/>
+  <node id="12029" version="1" lat="40.8254929" lon="-73.9341366"/>
+  <node id="12030" version="1" lat="40.8326536" lon="-73.9349305"/>
+  <node id="12031" version="1" lat="40.8352471" lon="-73.9346924"/>
+  <node id="12032" version="1" lat="40.8363477" lon="-73.9342048"/>
+  <node id="12033" version="1" lat="40.830378" lon="-73.9401582"/>
+  <node id="12034" version="1" lat="40.8308573" lon="-73.9399543"/>
+  <node id="12035" version="1" lat="40.8314059" lon="-73.9394554"/>
+  <node id="12036" version="1" lat="40.8320492" lon="-73.9391606"/>
+  <node id="12037" version="1" lat="40.8323665" lon="-73.9390075"/>
+  <node id="12038" version="1" lat="40.8328556" lon="-73.9386305"/>
+  <node id="12039" version="1" lat="40.8240402" lon="-73.9447675"/>
+  <node id="12040" version="1" lat="40.8236668" lon="-73.94388"/>
+  <node id="12041" version="1" lat="40.8293004" lon="-73.9397264"/>
+  <node id="12042" version="1" lat="40.8293917" lon="-73.9396888"/>
+  <node id="12043" version="1" lat="40.829483" lon="-73.9396647"/>
+  <node id="12044" version="1" lat="40.8295804" lon="-73.939662"/>
+  <node id="12045" version="1" lat="40.8296657" lon="-73.9396727"/>
+  <node id="12046" version="1" lat="40.8297671" lon="-73.9397076"/>
+  <node id="12047" version="1" lat="40.8298483" lon="-73.9397532"/>
+  <node id="12048" version="1" lat="40.8299254" lon="-73.9398256"/>
+  <node id="12049" version="1" lat="40.8299924" lon="-73.9398873"/>
+  <node id="12050" version="1" lat="40.8301467" lon="-73.9401153"/>
+  <node id="12051" version="1" lat="40.8302887" lon="-73.9402252"/>
+  <node id="12052" version="1" lat="40.817116" lon="-73.948009">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12053" version="1" lat="40.8178547" lon="-73.9476667"/>
+  <node id="12054" version="1" lat="40.8185359" lon="-73.9473494"/>
+  <node id="12055" version="1" lat="40.8192188" lon="-73.9470312"/>
+  <node id="12056" version="1" lat="40.819903" lon="-73.9467125"/>
+  <node id="12057" version="1" lat="40.8205827" lon="-73.9463959"/>
+  <node id="12058" version="1" lat="40.8212618" lon="-73.9460796">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12059" version="1" lat="40.8156619" lon="-73.9486538"/>
+  <node id="12060" version="1" lat="40.814878" lon="-73.9490546"/>
+  <node id="12061" version="1" lat="40.8137817" lon="-73.9498899"/>
+  <node id="12062" version="1" lat="40.8129409" lon="-73.9505713"/>
+  <node id="12063" version="1" lat="40.8122717" lon="-73.9512527"/>
+  <node id="12064" version="1" lat="40.8114312" lon="-73.9521165"/>
+  <node id="12065" version="1" lat="40.810765" lon="-73.952591">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12066" version="1" lat="40.8110167" lon="-73.9531534">
+    <tag k="bus" v="yes"/>
+    <tag k="public_transport" v="stop_position"/>
+  </node>
+  <node id="12067" version="1" lat="40.8111901" lon="-73.9535679"/>
+  <node id="12068" version="1" lat="40.8113663" lon="-73.9539895"/>
+  <node id="12069" version="1" lat="40.8113736" lon="-73.954006">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12070" version="1" lat="40.810992" lon="-73.954288">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12071" version="1" lat="40.8109338" lon="-73.9543303"/>
+  <node id="12072" version="1" lat="40.8106855" lon="-73.9545107">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="12073" version="1" lat="40.8106448" lon="-73.9545403"/>
+  <node id="12074" version="1" lat="40.810626" lon="-73.9545536"/>
+  <node id="12075" version="1" lat="40.810064" lon="-73.954966">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12076" version="1" lat="40.801151" lon="-73.9596323">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals:direction" v="both"/>
+  </node>
+  <node id="12077" version="1" lat="40.8014558" lon="-73.9594041"/>
+  <node id="12078" version="1" lat="40.8018354" lon="-73.9591281">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12079" version="1" lat="40.802463" lon="-73.9586719"/>
+  <node id="12080" version="1" lat="40.8030961" lon="-73.9582388">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12081" version="1" lat="40.803894" lon="-73.958204"/>
+  <node id="12082" version="1" lat="40.804121" lon="-73.9582158"/>
+  <node id="12083" version="1" lat="40.8047146" lon="-73.9582468"/>
+  <node id="12084" version="1" lat="40.805388" lon="-73.9582824"/>
+  <node id="12085" version="1" lat="40.8054414" lon="-73.9582694"/>
+  <node id="12086" version="1" lat="40.8055033" lon="-73.9582474"/>
+  <node id="12087" version="1" lat="40.8055952" lon="-73.9582071">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="12088" version="1" lat="40.805719" lon="-73.9581208"/>
+  <node id="12089" version="1" lat="40.806291" lon="-73.957722"/>
+  <node id="12090" version="1" lat="40.8069163" lon="-73.9572667"/>
+  <node id="12091" version="1" lat="40.8075469" lon="-73.9568075"/>
+  <node id="12092" version="1" lat="40.808177" lon="-73.9563487">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12093" version="1" lat="40.8088062" lon="-73.9558906"/>
+  <node id="12094" version="1" lat="40.8094326" lon="-73.9554344"/>
+  <node id="12095" version="1" lat="40.8099752" lon="-73.9550319"/>
+  <node id="12096" version="1" lat="40.8006709" lon="-73.958492"/>
+  <node id="12097" version="1" lat="40.7971216" lon="-73.9490851"/>
+  <node id="12098" version="1" lat="40.7971465" lon="-73.9491754"/>
+  <node id="12099" version="1" lat="40.797149" lon="-73.9491919"/>
+  <node id="12100" version="1" lat="40.7971567" lon="-73.9492562"/>
+  <node id="12101" version="1" lat="40.7971583" lon="-73.949317"/>
+  <node id="12102" version="1" lat="40.7971536" lon="-73.9493567"/>
+  <node id="12103" version="1" lat="40.7971399" lon="-73.9494078"/>
+  <node id="12104" version="1" lat="40.7971223" lon="-73.9494533"/>
+  <node id="12105" version="1" lat="40.7971059" lon="-73.9494936"/>
+  <node id="12106" version="1" lat="40.7970974" lon="-73.9495207"/>
+  <node id="12107" version="1" lat="40.7970874" lon="-73.9495595"/>
+  <node id="12108" version="1" lat="40.7970847" lon="-73.9495945"/>
+  <node id="12109" version="1" lat="40.7970867" lon="-73.9496413"/>
+  <node id="12110" version="1" lat="40.7970921" lon="-73.9497122"/>
+  <node id="12111" version="1" lat="40.7970992" lon="-73.949736">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12112" version="1" lat="40.7975954" lon="-73.950913"/>
+  <node id="12113" version="1" lat="40.7981863" lon="-73.9523145"/>
+  <node id="12114" version="1" lat="40.7982179" lon="-73.9523897">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12115" version="1" lat="40.7982764" lon="-73.952529">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12116" version="1" lat="40.7983152" lon="-73.9526213"/>
+  <node id="12117" version="1" lat="40.7994042" lon="-73.9552113"/>
+  <node id="12118" version="1" lat="40.799478" lon="-73.9553867">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12119" version="1" lat="40.7996973" lon="-73.9559082"/>
+  <node id="12120" version="1" lat="40.8005216" lon="-73.9578688">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12121" version="1" lat="40.8005506" lon="-73.9578596"/>
+  <node id="12122" version="1" lat="40.8005806" lon="-73.9578557"/>
+  <node id="12123" version="1" lat="40.8006107" lon="-73.9578567"/>
+  <node id="12124" version="1" lat="40.8006405" lon="-73.9578625"/>
+  <node id="12125" version="1" lat="40.8006695" lon="-73.957873"/>
+  <node id="12126" version="1" lat="40.800698" lon="-73.9578873"/>
+  <node id="12127" version="1" lat="40.8007239" lon="-73.9579058"/>
+  <node id="12128" version="1" lat="40.8007363" lon="-73.9579171"/>
+  <node id="12129" version="1" lat="40.8007537" lon="-73.9579333"/>
+  <node id="12130" version="1" lat="40.8007552" lon="-73.9579354"/>
+  <node id="12131" version="1" lat="40.8007707" lon="-73.9579576">
+    <tag k="crossing" v="marked"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="12132" version="1" lat="40.8007892" lon="-73.9579891"/>
+  <node id="12133" version="1" lat="40.8007936" lon="-73.9579976"/>
+  <node id="12134" version="1" lat="40.8008055" lon="-73.9580226">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12135" version="1" lat="40.8008166" lon="-73.9580507"/>
+  <node id="12136" version="1" lat="40.8008228" lon="-73.95807"/>
+  <node id="12137" version="1" lat="40.8008312" lon="-73.9581115"/>
+  <node id="12138" version="1" lat="40.8008363" lon="-73.9581478"/>
+  <node id="12139" version="1" lat="40.8008364" lon="-73.9581588"/>
+  <node id="12140" version="1" lat="40.8008364" lon="-73.9582065"/>
+  <node id="12141" version="1" lat="40.8008343" lon="-73.958226"/>
+  <node id="12142" version="1" lat="40.8008343" lon="-73.9582262"/>
+  <node id="12143" version="1" lat="40.8008311" lon="-73.9582537"/>
+  <node id="12144" version="1" lat="40.8008207" lon="-73.9582994"/>
+  <node id="12145" version="1" lat="40.8008188" lon="-73.9583053"/>
+  <node id="12146" version="1" lat="40.8008053" lon="-73.9583425"/>
+  <node id="12147" version="1" lat="40.8007854" lon="-73.9583823"/>
+  <node id="12148" version="1" lat="40.8007675" lon="-73.9584086">
+    <tag k="crossing" v="marked"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="12149" version="1" lat="40.8007612" lon="-73.9584178"/>
+  <node id="12150" version="1" lat="40.8007368" lon="-73.9584455"/>
+  <node id="12151" version="1" lat="40.8007335" lon="-73.9584483"/>
+  <node id="12152" version="1" lat="40.8007026" lon="-73.9584732"/>
+  <node id="12153" version="1" lat="40.7827775" lon="-73.9434707"/>
+  <node id="12154" version="1" lat="40.7833767" lon="-73.9430684"/>
+  <node id="12155" version="1" lat="40.7838458" lon="-73.9423791"/>
+  <node id="12156" version="1" lat="40.7842885" lon="-73.9414886"/>
+  <node id="12157" version="1" lat="40.7851964" lon="-73.939721"/>
+  <node id="12158" version="1" lat="40.7862077" lon="-73.9388466"/>
+  <node id="12159" version="1" lat="40.7867601" lon="-73.9383745"/>
+  <node id="12160" version="1" lat="40.7871216" lon="-73.9380527"/>
+  <node id="12161" version="1" lat="40.7876577" lon="-73.9377308"/>
+  <node id="12162" version="1" lat="40.7890508" lon="-73.9370924"/>
+  <node id="12163" version="1" lat="40.788665" lon="-73.9361376"/>
+  <node id="12164" version="1" lat="40.7889574" lon="-73.9359713"/>
+  <node id="12165" version="1" lat="40.7893798" lon="-73.9369261"/>
+  <node id="12166" version="1" lat="40.7910166" lon="-73.9357245"/>
+  <node id="12167" version="1" lat="40.7911953" lon="-73.9355314"/>
+  <node id="12168" version="1" lat="40.7911262" lon="-73.9354295"/>
+  <node id="12169" version="1" lat="40.7914674" lon="-73.9349949"/>
+  <node id="12170" version="1" lat="40.7915527" lon="-73.9351237"/>
+  <node id="12171" version="1" lat="40.792702" lon="-73.933391"/>
+  <node id="12172" version="1" lat="40.7945458" lon="-73.9300543"/>
+  <node id="12173" version="1" lat="40.795821" lon="-73.9291531"/>
+  <node id="12174" version="1" lat="40.7967591" lon="-73.9288956"/>
+  <node id="12175" version="1" lat="40.7997845" lon="-73.9287829"/>
+  <node id="12176" version="1" lat="40.7999348" lon="-73.9288151"/>
+  <node id="12177" version="1" lat="40.7999571" lon="-73.9288902"/>
+  <node id="12178" version="1" lat="40.8000708" lon="-73.9288768"/>
+  <node id="12179" version="1" lat="40.8001277" lon="-73.9288929"/>
+  <node id="12180" version="1" lat="40.8001683" lon="-73.9289063"/>
+  <node id="12181" version="1" lat="40.800284" lon="-73.9289251"/>
+  <node id="12182" version="1" lat="40.8004221" lon="-73.9289573"/>
+  <node id="12183" version="1" lat="40.8004505" lon="-73.9288875"/>
+  <node id="12184" version="1" lat="40.8006759" lon="-73.928909"/>
+  <node id="12185" version="1" lat="40.8011388" lon="-73.9289626"/>
+  <node id="12186" version="1" lat="40.8012038" lon="-73.9291477"/>
+  <node id="12187" version="1" lat="40.8017033" lon="-73.9292684"/>
+  <node id="12188" version="1" lat="40.8027205" lon="-73.9297217"/>
+  <node id="12189" version="1" lat="40.8029052" lon="-73.9298424"/>
+  <node id="12190" version="1" lat="40.8031164" lon="-73.9299256"/>
+  <node id="12191" version="1" lat="40.8031793" lon="-73.9298183"/>
+  <node id="12192" version="1" lat="40.8038453" lon="-73.930226"/>
+  <node id="12193" version="1" lat="40.8050066" lon="-73.9310816"/>
+  <node id="12194" version="1" lat="40.8061049" lon="-73.9320928"/>
+  <node id="12195" version="1" lat="40.806846" lon="-73.9327955"/>
+  <node id="12196" version="1" lat="40.8076337" lon="-73.9334768"/>
+  <node id="12197" version="1" lat="40.8086914" lon="-73.9340186"/>
+  <node id="12198" version="1" lat="40.8090731" lon="-73.9340883"/>
+  <node id="12199" version="1" lat="40.8096354" lon="-73.9342278"/>
+  <node id="12200" version="1" lat="40.8109388" lon="-73.9341474"/>
+  <node id="12201" version="1" lat="40.8120553" lon="-73.9339435"/>
+  <node id="12202" version="1" lat="40.8145563" lon="-73.9337477"/>
+  <node id="12203" version="1" lat="40.8145624" lon="-73.9339167"/>
+  <node id="12204" version="1" lat="40.8155124" lon="-73.9338416"/>
+  <node id="12205" version="1" lat="40.8155103" lon="-73.9337075"/>
+  <node id="12206" version="1" lat="40.816913" lon="-73.9336833"/>
+  <node id="12207" version="1" lat="40.7878894" lon="-73.9557237"/>
+  <node id="12208" version="1" lat="40.7949631" lon="-73.9506082">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12209" version="1" lat="40.7955873" lon="-73.9501569">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12210" version="1" lat="40.7962025" lon="-73.9497139">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12211" version="1" lat="40.7965979" lon="-73.949426">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12212" version="1" lat="40.7965839" lon="-73.9493727"/>
+  <node id="12213" version="1" lat="40.7965764" lon="-73.9493394"/>
+  <node id="12214" version="1" lat="40.7965712" lon="-73.9493123"/>
+  <node id="12215" version="1" lat="40.7965689" lon="-73.9492503"/>
+  <node id="12216" version="1" lat="40.7965722" lon="-73.9492018"/>
+  <node id="12217" version="1" lat="40.7965845" lon="-73.9491376"/>
+  <node id="12218" version="1" lat="40.7965985" lon="-73.9490913"/>
+  <node id="12219" version="1" lat="40.796632" lon="-73.9490155"/>
+  <node id="12220" version="1" lat="40.7966515" lon="-73.9489882"/>
+  <node id="12221" version="1" lat="40.7966738" lon="-73.9489588"/>
+  <node id="12222" version="1" lat="40.7966991" lon="-73.9489347"/>
+  <node id="12223" version="1" lat="40.7967185" lon="-73.9489183"/>
+  <node id="12224" version="1" lat="40.7967556" lon="-73.948901"/>
+  <node id="12225" version="1" lat="40.7967704" lon="-73.9488941"/>
+  <node id="12226" version="1" lat="40.7968227" lon="-73.9488784"/>
+  <node id="12227" version="1" lat="40.7968502" lon="-73.9488773"/>
+  <node id="12228" version="1" lat="40.7968819" lon="-73.948876"/>
+  <node id="12229" version="1" lat="40.7969357" lon="-73.9488877"/>
+  <node id="12230" version="1" lat="40.7969881" lon="-73.9489132"/>
+  <node id="12231" version="1" lat="40.7970238" lon="-73.9489419"/>
+  <node id="12232" version="1" lat="40.7970366" lon="-73.9489522"/>
+  <node id="12233" version="1" lat="40.7970843" lon="-73.9490114"/>
+  <node id="12234" version="1" lat="40.7851932" lon="-73.9493276"/>
+  <node id="12235" version="1" lat="40.7872279" lon="-73.9541536">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="12236" version="1" lat="40.7872777" lon="-73.9542727"/>
+  <node id="12237" version="1" lat="40.7872785" lon="-73.9542745"/>
+  <node id="12238" version="1" lat="40.8466508" lon="-73.8785937">
+    <tag k="ele" v="15"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Bronx"/>
+    <tag k="gnis:County_num" v="005"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="971944"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="New York,N.Y.,NY,USA"/>
+    <tag k="is_in:country" v="USA"/>
+    <tag k="is_in:country_code" v="US"/>
+    <tag k="is_in:state" v="New York"/>
+    <tag k="is_in:state_code" v="NY"/>
+    <tag k="name" v="The Bronx"/>
+    <tag k="name:en" v="The Bronx"/>
+    <tag k="name:ru" v="Бронкс"/>
+    <tag k="place" v="suburb"/>
+    <tag k="population" v="1392002"/>
+    <tag k="wikidata" v="Q18426"/>
+  </node>
+  <node id="12239" version="1" lat="40.7896239" lon="-73.9598939">
+    <tag k="alt_name:ru" v="Манхаттан"/>
+    <tag k="ele" v="26"/>
+    <tag k="gnis:county_id" v="061"/>
+    <tag k="gnis:created" v="05/07/2008"/>
+    <tag k="gnis:edited" v="07/22/2008"/>
+    <tag k="gnis:feature_id" v="2432105"/>
+    <tag k="gnis:state_id" v="36"/>
+    <tag k="int_name" v="Manhattan"/>
+    <tag k="name" v="Manhattan"/>
+    <tag k="name:he" v="מנהטן"/>
+    <tag k="name:lt" v="Manhatanas"/>
+    <tag k="name:ru" v="Манхэттен"/>
+    <tag k="name:uk" v="Мангеттен"/>
+    <tag k="place" v="suburb"/>
+    <tag k="wikidata" v="Q11299"/>
+    <tag k="wikipedia" v="en:Manhattan"/>
+  </node>
+  <node id="12240" version="1" lat="40.7968727217" lon="-73.73464027034"/>
+  <node id="12241" version="1" lat="40.7989969829" lon="-73.90228305817"/>
+  <node id="12242" version="1" lat="40.73242986894" lon="-73.96545444489"/>
+  <node id="12243" version="1" lat="40.60222374103" lon="-74.00596652985"/>
+  <node id="12244" version="1" lat="40.54125229309" lon="-73.81301911171"/>
   <node id="1705829296" version="1" lat="40.9515453" lon="-73.8277579">
     <tag k="addr:housenumber" v="25"/>
     <tag k="addr:postcode" v="10707"/>
@@ -8259,6 +8848,12 @@
   <way id="1224" version="1">
     <nd ref="11895"/>
     <nd ref="11894"/>
+    <nd ref="11931"/>
+    <nd ref="12005"/>
+    <nd ref="12008"/>
+    <nd ref="12007"/>
+    <nd ref="12006"/>
+    <nd ref="12244"/>
     <nd ref="11861"/>
   </way>
   <way id="1225" version="1">
@@ -8282,6 +8877,7 @@
   </way>
   <way id="1229" version="1">
     <nd ref="11891"/>
+    <nd ref="12240"/>
     <nd ref="11895"/>
   </way>
   <way id="1230" version="1">
@@ -8372,6 +8968,393 @@
   <way id="1245" version="1">
     <nd ref="11837"/>
     <nd ref="11849"/>
+  </way>
+  <way id="1246" version="1">
+    <nd ref="11936"/>
+    <nd ref="11937"/>
+    <nd ref="11938"/>
+    <nd ref="11939"/>
+    <nd ref="11940"/>
+    <nd ref="11941"/>
+    <nd ref="11942"/>
+    <nd ref="11943"/>
+    <nd ref="11944"/>
+    <nd ref="11945"/>
+    <nd ref="11946"/>
+    <nd ref="11947"/>
+    <nd ref="11948"/>
+    <nd ref="11949"/>
+    <nd ref="11950"/>
+    <nd ref="11951"/>
+    <nd ref="11952"/>
+    <nd ref="11953"/>
+    <nd ref="11954"/>
+    <nd ref="11955"/>
+    <nd ref="11956"/>
+    <nd ref="11957"/>
+    <nd ref="11958"/>
+    <nd ref="11959"/>
+    <nd ref="11960"/>
+    <nd ref="11961"/>
+    <nd ref="11962"/>
+    <nd ref="11963"/>
+    <nd ref="11964"/>
+    <nd ref="11965"/>
+    <nd ref="11966"/>
+    <nd ref="11967"/>
+    <nd ref="11968"/>
+    <nd ref="11969"/>
+    <nd ref="11970"/>
+    <nd ref="11971"/>
+    <nd ref="11972"/>
+    <nd ref="11973"/>
+    <nd ref="11974"/>
+    <nd ref="11975"/>
+    <nd ref="11976"/>
+    <nd ref="11977"/>
+    <nd ref="11978"/>
+    <nd ref="11979"/>
+    <nd ref="11980"/>
+    <nd ref="11981"/>
+    <nd ref="11936"/>
+    <tag k="ele" v="23"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="962511"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="name" v="Ridgewood"/>
+    <tag k="place" v="neighbourhood"/>
+  </way>
+  <way id="1247" version="1">
+    <nd ref="11983"/>
+    <nd ref="11984"/>
+    <nd ref="11985"/>
+    <nd ref="11986"/>
+    <nd ref="11987"/>
+    <nd ref="11988"/>
+    <nd ref="11989"/>
+    <nd ref="11990"/>
+    <nd ref="11991"/>
+    <nd ref="11992"/>
+    <nd ref="11993"/>
+    <nd ref="11994"/>
+    <nd ref="11995"/>
+    <nd ref="11996"/>
+    <nd ref="11997"/>
+    <nd ref="11983"/>
+    <tag k="is_in" v="Queens, NY"/>
+    <tag k="name" v="Fresh Meadows"/>
+    <tag k="place" v="neighbourhood"/>
+  </way>
+  <way id="1248" version="1">
+    <nd ref="11998"/>
+    <nd ref="11999"/>
+    <nd ref="12000"/>
+    <nd ref="12001"/>
+    <nd ref="12002"/>
+    <nd ref="11998"/>
+    <tag k="ele" v="30"/>
+    <tag k="gnis:Class" v="Populated Place"/>
+    <tag k="gnis:County" v="Queens"/>
+    <tag k="gnis:County_num" v="081"/>
+    <tag k="gnis:ST_alpha" v="NY"/>
+    <tag k="gnis:ST_num" v="36"/>
+    <tag k="gnis:id" v="957143"/>
+    <tag k="import_uuid" v="bb7269ee-502a-5391-8056-e3ce0e66489c"/>
+    <tag k="is_in" v="Queens, NY"/>
+    <tag k="name" v="Middle Village"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="wikidata" v="Q6841642"/>
+  </way>
+  <way id="1249" version="1">
+    <nd ref="12016"/>
+    <nd ref="12017"/>
+    <nd ref="12018"/>
+    <nd ref="12019"/>
+    <nd ref="12020"/>
+    <nd ref="12021"/>
+    <nd ref="12022"/>
+    <nd ref="12023"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1250" version="1">
+    <nd ref="12016"/>
+    <nd ref="12024"/>
+    <nd ref="12025"/>
+    <nd ref="12026"/>
+    <nd ref="12027"/>
+    <nd ref="12028"/>
+    <nd ref="12029"/>
+    <nd ref="12030"/>
+    <nd ref="12031"/>
+    <nd ref="12032"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1251" version="1">
+    <nd ref="12033"/>
+    <nd ref="12034"/>
+    <nd ref="12035"/>
+    <nd ref="12036"/>
+    <nd ref="12037"/>
+    <nd ref="12038"/>
+    <nd ref="12032"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1252" version="1">
+    <nd ref="12039"/>
+    <nd ref="12040"/>
+    <nd ref="12041"/>
+    <nd ref="12042"/>
+    <nd ref="12043"/>
+    <nd ref="12044"/>
+    <nd ref="12045"/>
+    <nd ref="12046"/>
+    <nd ref="12047"/>
+    <nd ref="12048"/>
+    <nd ref="12049"/>
+    <nd ref="12050"/>
+    <nd ref="12051"/>
+    <nd ref="12033"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1253" version="1">
+    <nd ref="12052"/>
+    <nd ref="12053"/>
+    <nd ref="12054"/>
+    <nd ref="12055"/>
+    <nd ref="12056"/>
+    <nd ref="12057"/>
+    <nd ref="12058"/>
+    <nd ref="12039"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1254" version="1">
+    <nd ref="12052"/>
+    <nd ref="12059"/>
+    <nd ref="12060"/>
+    <nd ref="12061"/>
+    <nd ref="12062"/>
+    <nd ref="12063"/>
+    <nd ref="12064"/>
+    <nd ref="12065"/>
+    <nd ref="12066"/>
+    <nd ref="12067"/>
+    <nd ref="12068"/>
+    <nd ref="12069"/>
+    <nd ref="12070"/>
+    <nd ref="12071"/>
+    <nd ref="12072"/>
+    <nd ref="12073"/>
+    <nd ref="12074"/>
+    <nd ref="12075"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1255" version="1">
+    <nd ref="12076"/>
+    <nd ref="12077"/>
+    <nd ref="12078"/>
+    <nd ref="12079"/>
+    <nd ref="12080"/>
+    <nd ref="12081"/>
+    <nd ref="12082"/>
+    <nd ref="12083"/>
+    <nd ref="12084"/>
+    <nd ref="12085"/>
+    <nd ref="12086"/>
+    <nd ref="12087"/>
+    <nd ref="12088"/>
+    <nd ref="12089"/>
+    <nd ref="12090"/>
+    <nd ref="12091"/>
+    <nd ref="12092"/>
+    <nd ref="12093"/>
+    <nd ref="12094"/>
+    <nd ref="12095"/>
+    <nd ref="12075"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1256" version="1">
+    <nd ref="12096"/>
+    <nd ref="12076"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1257" version="1">
+    <nd ref="12023"/>
+    <nd ref="12097"/>
+    <nd ref="12098"/>
+    <nd ref="12099"/>
+    <nd ref="12100"/>
+    <nd ref="12101"/>
+    <nd ref="12102"/>
+    <nd ref="12103"/>
+    <nd ref="12104"/>
+    <nd ref="12105"/>
+    <nd ref="12106"/>
+    <nd ref="12107"/>
+    <nd ref="12108"/>
+    <nd ref="12109"/>
+    <nd ref="12110"/>
+    <nd ref="12111"/>
+    <nd ref="12112"/>
+    <nd ref="12113"/>
+    <nd ref="12114"/>
+    <nd ref="12115"/>
+    <nd ref="12116"/>
+    <nd ref="12117"/>
+    <nd ref="12118"/>
+    <nd ref="12119"/>
+    <nd ref="12120"/>
+    <nd ref="12121"/>
+    <nd ref="12122"/>
+    <nd ref="12123"/>
+    <nd ref="12124"/>
+    <nd ref="12125"/>
+    <nd ref="12126"/>
+    <nd ref="12127"/>
+    <nd ref="12128"/>
+    <nd ref="12129"/>
+    <nd ref="12130"/>
+    <nd ref="12131"/>
+    <nd ref="12132"/>
+    <nd ref="12133"/>
+    <nd ref="12134"/>
+    <nd ref="12135"/>
+    <nd ref="12136"/>
+    <nd ref="12137"/>
+    <nd ref="12138"/>
+    <nd ref="12139"/>
+    <nd ref="12140"/>
+    <nd ref="12141"/>
+    <nd ref="12142"/>
+    <nd ref="12143"/>
+    <nd ref="12144"/>
+    <nd ref="12145"/>
+    <nd ref="12146"/>
+    <nd ref="12147"/>
+    <nd ref="12148"/>
+    <nd ref="12149"/>
+    <nd ref="12150"/>
+    <nd ref="12151"/>
+    <nd ref="12152"/>
+    <nd ref="12096"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1258" version="1">
+    <nd ref="12153"/>
+    <nd ref="12154"/>
+    <nd ref="12155"/>
+    <nd ref="12156"/>
+    <nd ref="12157"/>
+    <nd ref="12158"/>
+    <nd ref="12159"/>
+    <nd ref="12160"/>
+    <nd ref="12161"/>
+    <nd ref="12162"/>
+    <nd ref="12163"/>
+    <nd ref="12164"/>
+    <nd ref="12165"/>
+    <nd ref="12166"/>
+    <nd ref="12167"/>
+    <nd ref="12168"/>
+    <nd ref="12169"/>
+    <nd ref="12170"/>
+    <nd ref="12171"/>
+    <nd ref="12172"/>
+    <nd ref="12173"/>
+    <nd ref="12174"/>
+    <nd ref="12175"/>
+    <nd ref="12176"/>
+    <nd ref="12177"/>
+    <nd ref="12178"/>
+    <nd ref="12179"/>
+    <nd ref="12180"/>
+    <nd ref="12181"/>
+    <nd ref="12182"/>
+    <nd ref="12183"/>
+    <nd ref="12184"/>
+    <nd ref="12185"/>
+    <nd ref="12186"/>
+    <nd ref="12187"/>
+    <nd ref="12188"/>
+    <nd ref="12189"/>
+    <nd ref="12190"/>
+    <nd ref="12191"/>
+    <nd ref="12192"/>
+    <nd ref="12193"/>
+    <nd ref="12194"/>
+    <nd ref="12195"/>
+    <nd ref="12196"/>
+    <nd ref="12197"/>
+    <nd ref="12198"/>
+    <nd ref="12199"/>
+    <nd ref="12200"/>
+    <nd ref="12201"/>
+    <nd ref="12202"/>
+    <nd ref="12203"/>
+    <nd ref="12204"/>
+    <nd ref="12205"/>
+    <nd ref="12206"/>
+    <nd ref="12016"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1259" version="1">
+    <nd ref="12207"/>
+    <nd ref="12208"/>
+    <nd ref="12209"/>
+    <nd ref="12210"/>
+    <nd ref="12211"/>
+    <nd ref="12212"/>
+    <nd ref="12213"/>
+    <nd ref="12214"/>
+    <nd ref="12215"/>
+    <nd ref="12216"/>
+    <nd ref="12217"/>
+    <nd ref="12218"/>
+    <nd ref="12219"/>
+    <nd ref="12220"/>
+    <nd ref="12221"/>
+    <nd ref="12222"/>
+    <nd ref="12223"/>
+    <nd ref="12224"/>
+    <nd ref="12225"/>
+    <nd ref="12226"/>
+    <nd ref="12227"/>
+    <nd ref="12228"/>
+    <nd ref="12229"/>
+    <nd ref="12230"/>
+    <nd ref="12231"/>
+    <nd ref="12232"/>
+    <nd ref="12233"/>
+    <nd ref="12023"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1260" version="1">
+    <nd ref="12234"/>
+    <nd ref="12235"/>
+    <nd ref="12236"/>
+    <nd ref="12237"/>
+    <nd ref="12207"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1261" version="1">
+    <nd ref="12153"/>
+    <nd ref="12234"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <way id="1262" version="1">
+    <nd ref="12240"/>
+    <nd ref="12241"/>
+    <nd ref="12242"/>
+    <nd ref="12243"/>
+    <nd ref="12244"/>
+    <nd ref="11894"/>
+    <nd ref="11895"/>
+    <nd ref="12240"/>
+    <tag k="name" v="Queens"/>
+    <tag k="place" v="suburb"/>
   </way>
   <way id="128892" version="1">
     <nd ref="10165"/>
@@ -8752,5 +9735,40 @@
     <tag k="type" v="boundary"/>
     <tag k="wikidata" v="Q502459"/>
     <tag k="wikipedia" v="en:Union County, New Jersey"/>
+  </relation>
+  <relation id="20" version="1">
+    <member type="way" ref="1249" role="outer"/>
+    <member type="way" ref="1250" role="outer"/>
+    <member type="way" ref="1251" role="outer"/>
+    <member type="way" ref="1252" role="outer"/>
+    <member type="way" ref="1253" role="outer"/>
+    <member type="way" ref="1254" role="outer"/>
+    <member type="way" ref="1255" role="outer"/>
+    <member type="way" ref="1256" role="outer"/>
+    <member type="way" ref="1257" role="outer"/>
+    <member type="node" ref="12014" role="label"/>
+    <tag k="admin_level" v="10"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Harlem"/>
+    <tag k="name:ru" v="Гарлем"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q189074"/>
+    <tag k="wikipedia" v="en:Harlem"/>
+  </relation>
+  <relation id="21" version="1">
+    <member type="way" ref="1258" role="outer"/>
+    <member type="way" ref="1249" role="outer"/>
+    <member type="way" ref="1259" role="outer"/>
+    <member type="way" ref="1260" role="outer"/>
+    <member type="way" ref="1261" role="outer"/>
+    <member type="node" ref="12015" role="label"/>
+    <tag k="admin_level" v="10"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="East Harlem"/>
+    <tag k="name:ru" v="Ист-Гарлем"/>
+    <tag k="place" v="neighbourhood"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q1069687"/>
   </relation>
 </osm>
