@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-import xml.etree.ElementTree as etree
+try:
+    from lxml import etree
+except ImportError:
+    import xml.etree.ElementTree as etree
 import sys
 
 if len(sys.argv) < 3:
