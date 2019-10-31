@@ -30,13 +30,14 @@ with place_nodes as (
 -- 2. Build voronoi polygons for each group and assign "place" tag to these for matching.
 select place, null::bigint as osm_id,
     -- a. Collecting all points with similar place=* tag inside each of the enclosing polygon.
-    -- b. Building voronoi polygons for these groups separately -> GeometryCollections
-    -- c. Splitting GeometryCollections into separate polygons
+    -- b. Building voronoi polygons for these groups separately -> GeometryCollections.
+    --    If there is a single point, use the enclosing geometry instead.
+    -- c. Splitting GeometryCollections into separate polygons.
     -- d. Intersecting each polygon with the corresponding enclosing polygon to cut these.
     -- e. After intersection we might get a MultiPolygon: splitting these again into polygons.
     -- f. The resulting polygons (place, null as osm_id, geom) go into table place_polygons_tmp.
     (ST_Dump(ST_Intersection(enclosing,
-        (ST_Dump(ST_VoronoiPolygons(ST_Collect(way), 10, enclosing))).geom
+        (ST_Dump(case when count(way) > 1 then ST_VoronoiPolygons(ST_Collect(way), 10, enclosing) else enclosing end)).geom
     ))).geom as geom
 from nodes_with_enclosing
 group by place, enclosing;

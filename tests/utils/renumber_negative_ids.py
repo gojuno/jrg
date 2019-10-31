@@ -70,4 +70,4 @@ for obj in osm:
 
 out_file = sys.argv[1] if sys.argv[2] == '-' else sys.argv[2]
 with open(out_file, 'wb') as f:
-    f.write(etree.tostring(osm))
+    f.write(etree.tostring(osm, encoding='utf-8'))
