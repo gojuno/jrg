@@ -9,9 +9,7 @@ ENV POSTGIS_VERSION 3.0.0+dfsg-1.pgdg100+1
 
 #TODO switch to versions when we will have they similar with mdillon postgis repo
 # https://hub.docker.com/r/mdillon/postgis/dockerfile
-#TODO change to master before merge!!!!!
-#DO NOT MERGE!
-ENV GEOCODER_BRANCH docker
+ENV GEOCODER_BRANCH master
 
 RUN apt-get update \
       && apt-cache showpkg postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
