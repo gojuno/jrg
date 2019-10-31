@@ -37,9 +37,19 @@ FLASK_JOB="$(jobs -p | head -n 1)"
 # Allowing flask time to start
 sleep 1
 
+# Make tags list
+if [ "${1-}" == "wip" ]; then
+    TAGS="--tags wip"
+    shift
+else
+    TAGS="--tags ~wip"
+fi
+
 # Run tests
+utils/osm_to_gherkin.py features_auto
 export PYTHONPATH="$HERE/tests"
-"$VENV/bin/behave" -f formatter:BareFormatter --tags unit "$HERE/tests" || true
+"$VENV/bin/behave" -f formatter:BareFormatter --tags unit ${TAGS-} $@ "$HERE/tests" || true
+rm -r features_auto
 
 # Stop web server
 kill "$FLASK_JOB"
