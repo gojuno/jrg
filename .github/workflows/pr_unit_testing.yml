@@ -1,0 +1,37 @@
+name: Run unit tests
+on: [pull_request]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: mdillon/postgis:11
+        ports:
+          - 5432:5432
+        #needed because the postgres container does not provide a healthcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+        env:
+         POSTGRES_USER: postgres
+         POSTGRES_PASSWORD: postgres
+         POSTGRES_DB: test
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python 3
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3
+    - name: Install dependencies
+      run: |
+        sudo apt-get install osm2pgsql postgresql libpq-dev --no-install-recommends -y
+    - name: run tests
+      env:
+          PGUSER: postgres
+          PGDATABASE: test
+          PGHOST: postgres
+          PGPASSWORD: postgres
+      run: ./tests/unit.sh
+
