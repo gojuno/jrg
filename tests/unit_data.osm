@@ -1,16 +1,4 @@
 <osm version="0.6" upload="false" generator="JOSM">
-  <node id="11927" lat="40.95187369127" lon="-73.62997747192" version="1">
-    <tag k="feature" v="errors"/>
-    <tag k="name" v="State but no object should return state OSM id"/>
-    <tag k="sid" v="error_state_only"/>
-    <tag k="skip" v="yes"/>
-  </node>
-  <node id="11928" lat="40.89888846921" lon="-73.73570050291" version="1">
-    <tag k="feature" v="errors"/>
-    <tag k="name" v="Object type should be way/relation (not w/r) for admin queries"/>
-    <tag k="sid" v="error_admin"/>
-    <tag k="skip" v="yes"/>
-  </node>
   <node id="10000" version="1" lat="40.6785188" lon="-73.9897708"/>
   <node id="10001" version="1" lat="40.6785532" lon="-73.9898567"/>
   <node id="10002" version="1" lat="40.6787316" lon="-73.9897332"/>
@@ -870,16 +858,16 @@
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="East Harlem"/>
     <tag k="sid" v="neighbourhoods01"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is East Harlem, Manhattan"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10337" version="1" lat="40.8218" lon="-73.93962">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Harlem far from the place point"/>
     <tag k="sid" v="neighbourhoods02"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Harlem, Manhattan"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10338" version="1" lat="40.50706" lon="-74.24964">
     <tag k="admin" v="yes"/>
@@ -887,48 +875,48 @@
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="A neighbourhood on Staten Island"/>
     <tag k="sid" v="neighbourhoods03"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Tottenville, Staten Island"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10339" version="1" lat="40.82186" lon="-73.8906">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="More than 1 km from any neighbourhood"/>
     <tag k="sid" v="neighbourhoods04"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10340" version="1" lat="40.84563" lon="-73.87859">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Suburbs are not mixed with neighbourhoods"/>
     <tag k="sid" v="neighbourhoods05"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Lambert Houses, The Bronx"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10341" version="1" lat="40.90294" lon="-73.86495">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="NYC boundary cuts neighbourhoods"/>
     <tag k="sid" v="neighbourhoods06"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10342" version="1" lat="40.71584" lon="-73.86722">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Polygonal neighbourhood"/>
     <tag k="sid" v="neighbourhoods07"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Middle Village, Queens"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10343" version="1" lat="40.72768" lon="-73.78645">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Polygonal neighbourhood cuts point neighbourhoods"/>
     <tag k="sid" v="neighbourhoods08"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Fresh Meadows, Queens"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10344" version="1" lat="40.70779" lon="-73.90308">
     <tag k="admin" v="yes"/>
@@ -936,16 +924,16 @@
     <tag k="name" v="Point neighbourhood inside a polygonal neighbourhood is deleted"/>
     <tag k="note" v="Could be Fresh Pond, but nope"/>
     <tag k="sid" v="neighbourhoods09"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Ridgewood, Queens"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10345" version="1" lat="40.69187" lon="-73.90166">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Same polygon but far from points"/>
     <tag k="sid" v="neighbourhoods10"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Ridgewood, Queens"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10346" version="1" lat="40.65154" lon="-73.83259">
     <tag k="admin" v="yes"/>
@@ -953,32 +941,32 @@
     <tag k="name" v="Bay does not cut a neighbourhood"/>
     <tag k="note" v="Though do we want it?"/>
     <tag k="sid" v="neighbourhoods11"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Hamilton Beach, Queens"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10347" version="1" lat="40.75716" lon="-74.02947">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="Neighbourhoods with centre outisde a city are removed"/>
     <tag k="sid" v="neighbourhoods12"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10348" version="1" lat="40.5917" lon="-73.7407">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="No neighbourhoods outside a city"/>
     <tag k="sid" v="neighbourhoods13"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="response does not contain: neighbourhood"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10349" version="1" lat="40.5956" lon="-73.7422">
     <tag k="admin" v="yes"/>
     <tag k="feature" v="neighbourhoods"/>
     <tag k="name" v="But there are in a city"/>
     <tag k="sid" v="neighbourhoods14"/>
-    <tag k="skip" v="yes"/>
     <tag k="then" v="neighbourhood is Roy Reuther Houses"/>
+    <tag k="wip" v="yes"/>
   </node>
   <node id="10350" version="1" lat="40.7" lon="-73.8">
     <tag k="admin" v="yes"/>
@@ -3757,6 +3745,18 @@
   <node id="11924" version="1" lat="40.64548016877" lon="-74.3541813755"/>
   <node id="11925" version="1" lat="40.5899059213" lon="-74.39126023293"/>
   <node id="11926" version="1" lat="40.60860956835" lon="-74.43185814857"/>
+  <node id="11927" version="1" lat="40.95187369127" lon="-73.62997747192">
+    <tag k="feature" v="errors"/>
+    <tag k="name" v="State but no object should return state OSM id"/>
+    <tag k="sid" v="error_state_only"/>
+    <tag k="skip" v="yes"/>
+  </node>
+  <node id="11928" version="1" lat="40.89888846921" lon="-73.73570050291">
+    <tag k="feature" v="errors"/>
+    <tag k="name" v="Object type should be way/relation (not w/r) for admin queries"/>
+    <tag k="sid" v="error_admin"/>
+    <tag k="skip" v="yes"/>
+  </node>
   <node id="1705829296" version="1" lat="40.9515453" lon="-73.8277579">
     <tag k="addr:housenumber" v="25"/>
     <tag k="addr:postcode" v="10707"/>
