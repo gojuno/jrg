@@ -50,12 +50,20 @@ for feat, scenarios in features.items():
                 if k[0] in scen:
                     check = scen[k[0]]
                     if 'response' in check and ':' in check:
-                        values = ['key'] + [v.strip() for v in
-                                            check[check.index(':')+1:].split(',')]
+                        # Producing a 2d table out of a list of values, either plain or k=v.
+                        parts = [v.strip() for v in check[check.index(':')+1:].split(',')]
+                        if '=' in parts[0]:
+                            values = [[], []]
+                            for part in parts:
+                                s = [p.strip() for p in part.split('=')]
+                                values[0].append(s[0])
+                                values[1].append(s[1])
+                        else:
+                            values = [['key']] + [[p] for p in parts]
                         check = check[:check.index(':')]
                     else:
                         values = []
                     print(f'        {k[1]} {check}', file=f)
                     for v in values:
-                        print(f'            | {v} |', file=f)
+                        print('            | {} |'.format(' | '.join(v)), file=f)
             print(file=f)
