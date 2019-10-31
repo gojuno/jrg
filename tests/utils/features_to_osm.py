@@ -68,8 +68,6 @@ if __name__ == '__main__':
     for feature in os.listdir('features'):
         if feature.endswith('.feature'):
             name = feature[:feature.index('.')]
-            if name in ('errors', 'load'):
-                continue
             for i, scen in enumerate(parse_feature_file(os.path.join('features', feature))):
                 tags = {
                     'feature': name,

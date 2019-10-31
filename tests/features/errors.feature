@@ -1,4 +1,4 @@
-@errors
+@unit @errors
 Feature: Error codes and edge cases
 
     Scenario: Non-numeric coordinates
@@ -38,10 +38,10 @@ Feature: Error codes and edge cases
 
     @admin @big
     Scenario: State but no object should return state OSM id
-        When location is -74.9001, 38.8882
+        When point is error_state_only
         Then response contains
             | county | state | country |
-            | Cape May County | New Jersey | United States |
+            | Westchester County | New York | United States |
         And response does not contain
             | key |
             | house |
@@ -51,10 +51,5 @@ Feature: Error codes and edge cases
 
     @admin
     Scenario: Object type should be way/relation (not w/r) for admin queries
-        When location is -73.7357, 40.8989
-        Then object is relation 3308973
-
-    @admin @big
-    Scenario: Error 500 because of a GeometryCollection
-        When location is 34.802121, 32.083462
-        Then status code is 200
+        When point is error_admin
+        Then object is relation 12

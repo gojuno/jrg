@@ -43,7 +43,7 @@ def load_coords():
     for node in osm.findall('node'):
         tags = {t.get('k'): t.get('v') for t in node.findall('tag')}
         if 'sid' in tags:
-            coords['sid'] = (node.get('lon'), node.get('lat'))
+            coords[tags['sid']] = (node.get('lon'), node.get('lat'))
     return coords
 
 
