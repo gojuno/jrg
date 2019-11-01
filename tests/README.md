@@ -44,5 +44,9 @@ including NY, NJ, MA and few others.
 the calculated RPS falls below 30 for geocoding queries and 45 for object
 lookup queries.
 
-`admin.sh` tests and all New York and neighboring states' borders are correctly
+`admin.sh` tests that all New York and neighboring states' borders are correctly
 mapped. If it fails, time to open JOSM and do some fixing.
+
+These scripts expect a `.venv` directory created above this one with either
+`../run.sh` or `unit.sh`. If you have your own environment with `behave`
+installed, do not forget to use it for running the scripts.

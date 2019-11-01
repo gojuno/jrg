@@ -33,6 +33,7 @@ export FLASK_APP="$HERE/web/geocoder.py"
 export FLASK_ENV=development
 "$VENV/bin/flask" run 2>/dev/null &
 FLASK_JOB="$(jobs -p | head -n 1)"
+trap "kill $FLASK_JOB; exit" EXIT SIGHUP SIGINT SIGQUIT SIGTERM
 
 # Allowing flask time to start
 sleep 1
@@ -50,6 +51,3 @@ utils/osm_to_gherkin.py features_auto
 export PYTHONPATH="$HERE/tests"
 "$VENV/bin/behave" -f formatter:BareFormatter --tags unit ${TAGS-} $@ "$HERE/tests" || true
 rm -r features_auto
-
-# Stop web server
-kill "$FLASK_JOB"
