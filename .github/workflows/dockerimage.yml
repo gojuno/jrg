@@ -11,5 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the JRG Docker image
-      run: docker build ./ --file docker/Dockerfile --tag jrg:$(date +%s)
-
+      run: docker build ./ --file docker/Dockerfile --tag jrg:${{github.sha}}
+    - name: Test JRG Docker image
+      run: |
+          docker run -t -v "${PWD}/tests:/data" -v "pgdata:/pgdata" jrg:${{github.sha}} /init.sh /data/unit_data.osm
+          docker run -v "pgdata:/pgdata" -d -p 8080:80 jrg:${{github.sha}}
+          for i in `seq 1 20`; do sleep 1; echo "."; if curl --output /dev/null --silent --head localhost:8081; then break; fi done
+          curl -s 'http://localhost:8080/reverse?lon=-73.96665&lat=40.71181' | grep house_number > /dev/null
