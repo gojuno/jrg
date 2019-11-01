@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import os
-import sys
 import argparse
 import xml.etree.ElementTree as etree
 from collections import defaultdict
@@ -13,7 +12,10 @@ def parse_osm(filename):
         tags = {t.get('k'): t.get('v') for t in node.findall('tag')}
         if 'feature' in tags and 'name' in tags and 'skip' not in tags:
             scen = {'name': tags['name']}
-            scen['when'] = 'location is {}, {}'.format(node.get('lon'), node.get('lat'))
+            if 'sid' in tags:
+                scen['when'] = 'point is {}'.format(tags['sid'])
+            else:
+                scen['when'] = 'location is {}, {}'.format(node.get('lon'), node.get('lat'))
             for k in ('then', 'and', 'and1', 'note', 'sid'):
                 if k in tags:
                     scen[k] = tags[k]
