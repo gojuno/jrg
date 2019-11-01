@@ -25,8 +25,7 @@ jobs:
       with:
         python-version: 3
     - name: Install dependencies
-      run: |
-        sudo apt-get install osm2pgsql postgresql libpq-dev --no-install-recommends -y
+      run: sudo apt-get install osm2pgsql postgresql libpq-dev --no-install-recommends -y
     - name: run tests
       env:
           PGUSER: postgres
