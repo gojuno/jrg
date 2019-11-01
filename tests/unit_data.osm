@@ -1,4 +1,11 @@
 <osm version="0.6" upload="false" generator="JOSM">
+  <node id="12010" lat="40.76903778829" lon="-73.96489888497" version="1">
+    <tag k="complex" v="yes"/>
+    <tag k="feature" v="address_points"/>
+    <tag k="name" v="Address point with matching road further than the other"/>
+    <tag k="sid" v="address_points05a"/>
+    <tag k="then" v="address is 101 East 69th Street"/>
+  </node>
   <node id="10000" version="1" lat="40.6785188" lon="-73.9897708"/>
   <node id="10001" version="1" lat="40.6785532" lon="-73.9898567"/>
   <node id="10002" version="1" lat="40.6787316" lon="-73.9897332"/>
@@ -446,7 +453,6 @@
     <tag k="note" v="Possible good answer is 695 Park Avenue, but there is an address point in 39 m"/>
     <tag k="sid" v="address_points04"/>
     <tag k="then" v="address is 681 Park Avenue"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10281" version="1" lat="40.76906" lon="-73.96496">
     <tag k="and" v="object is node 2723866680"/>
@@ -455,7 +461,6 @@
     <tag k="name" v="Address point instead of closer building with address from a polygon"/>
     <tag k="sid" v="address_points05"/>
     <tag k="then" v="address is 701 Park Avenue"/>
-    <tag k="wip" v="yes"/>
   </node>
   <node id="10282" version="1" lat="40.67037" lon="-73.944465">
     <tag k="complex" v="yes"/>
@@ -1705,9 +1710,9 @@
     <tag k="addr:postcode" v="10021"/>
     <tag k="addr:street" v="Park Avenue"/>
   </node>
-  <node id="10720" version="1" lat="40.7691503" lon="-73.9649191">
-    <tag k="addr:housenumber" v="701"/>
-    <tag k="addr:postcode" v="10021"/>
+  <node id="10720" version="1" lat="40.7687369" lon="-73.9651816">
+    <tag k="addr:housenumber" v="681"/>
+    <tag k="addr:postcode" v="10065"/>
     <tag k="addr:street" v="Park Avenue"/>
   </node>
   <node id="10721" version="1" lat="40.7697103" lon="-73.9643213">
@@ -1733,15 +1738,9 @@
     <tag k="entrance" v="yes"/>
   </node>
   <node id="10725" version="1" lat="40.7690574" lon="-73.964743">
-    <tag k="addr:housenumber" v="101"/>
-    <tag k="addr:postcode" v="10021"/>
-    <tag k="addr:street" v="East 69th Street"/>
     <tag k="entrance" v="main"/>
   </node>
   <node id="10726" version="1" lat="40.7687432" lon="-73.9651918">
-    <tag k="addr:housenumber" v="695"/>
-    <tag k="addr:postcode" v="10065"/>
-    <tag k="addr:street" v="Park Avenue"/>
     <tag k="entrance" v="yes"/>
   </node>
   <node id="10727" version="1" lat="40.7687845" lon="-73.9647124">
@@ -3974,6 +3973,11 @@
   <node id="12006" version="1" lat="40.55724352628" lon="-73.79619615555"/>
   <node id="12007" version="1" lat="40.57484803069" lon="-73.81713884354"/>
   <node id="12008" version="1" lat="40.57915064967" lon="-73.81662385941"/>
+  <node id="12009" version="1" lat="40.76898598895" lon="-73.96454215184">
+    <tag k="addr:housenumber" v="101"/>
+    <tag k="addr:postcode" v="10021"/>
+    <tag k="addr:street" v="East 69th Street"/>
+  </node>
   <node id="12013" version="1" lat="40.8427778" lon="-73.8788889">
     <tag k="ele" v="12"/>
     <tag k="gnis:Class" v="Populated Place"/>
@@ -4359,6 +4363,11 @@
     <tag k="addr:housenumber" v="2"/>
     <tag k="addr:postcode" v="10019"/>
     <tag k="addr:street" v="Central Park South"/>
+  </node>
+  <node id="2723866680" version="1" lat="40.7691503" lon="-73.9649191">
+    <tag k="addr:housenumber" v="701"/>
+    <tag k="addr:postcode" v="10021"/>
+    <tag k="addr:street" v="Park Avenue"/>
   </node>
   <node id="2823056984" version="1" lat="40.885919" lon="-73.8424128">
     <tag k="addr:housenumber" v="1961"/>
