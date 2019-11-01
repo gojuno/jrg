@@ -11,7 +11,8 @@ if len(sys.argv) < 3:
     print('If the output file is "-", the input file is overwritten.')
     sys.exit(1)
 
-osm = etree.parse(sys.argv[1]).getroot()
+osm_tree = etree.parse(sys.argv[1])
+osm = osm_tree.getroot()
 
 id_map = {}
 def_not_exist_neg_id = -10000000
@@ -70,4 +71,4 @@ for obj in osm:
 
 out_file = sys.argv[1] if sys.argv[2] == '-' else sys.argv[2]
 with open(out_file, 'wb') as f:
-    f.write(etree.tostring(osm, encoding='utf-8'))
+    osm_tree.write(f, encoding='utf-8')

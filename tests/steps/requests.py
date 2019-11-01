@@ -17,5 +17,5 @@ def get_info(context, osm_type, osm_id):
 
 @when('point is {point}')
 def find_point(context, point):
-    lonlat = context.points[point]
-    reverse_geocode(context, lonlat[0], lonlat[1])
+    lon, lat = context.points[point]
+    reverse_geocode(context, lon, lat)
