@@ -47,7 +47,5 @@ else
 fi
 
 # Run tests
-utils/osm_to_gherkin.py features_auto
 export PYTHONPATH="$HERE/tests"
 "$VENV/bin/behave" -f formatter:BareFormatter --tags unit ${TAGS-} $@ "$HERE/tests" || true
-rm -r features_auto

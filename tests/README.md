@@ -25,11 +25,12 @@ should take around five seconds.
 Just open the `unit_data.osm` with JOSM and edit it like a regular OSM file. Be careful
 not to adjust tests you don't intend to. Do not download OSM data straight into this
 file; copy and paste individual objects instead (Ctrl+Alt+V pastes in place).
-When you're done, remove the layer from JOSM and run the renumbering script:
+When you're done, remove the layer from JOSM and run the scripts:
 
-    utils/renumber_negative_ids.py unit_data.osm -
+    ./update_unit_tests.sh
 
-It would turn negative identifiers into positive, keeping object relations.
+It would turn negative identifiers into positive, keeping object relations. And rebuild
+the files inside the `features_auto` directory. Do not edit these directly.
 
 Add `wip=yes` tag on new tests you are debugging, so that you can single them out
 by running `./unit.sh wip`.
