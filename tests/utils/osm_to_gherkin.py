@@ -64,13 +64,13 @@ def write_feature(name, scenarios, f):
         ftags = ftags.intersection(scen['tags'] or set())
     ftags.add('@unit')
     if ftags:
-        print(' '.join(ftags), file=f)
+        print(' '.join(sorted(ftags)), file=f)
     name = name.replace('_', ' ').title()
     print('Feature: '+name, file=f)
     print(file=f)
     for scen in sorted(scenarios, key=lambda s: s.get('sid', 'zzz')):
         if 'tags' in scen and scen['tags'] - ftags:
-            print('    ' + ' '.join(scen['tags'] - ftags), file=f)
+            print('    ' + ' '.join(sorted(scen['tags'] - ftags)), file=f)
         print_scenario(scen, f)
 
 

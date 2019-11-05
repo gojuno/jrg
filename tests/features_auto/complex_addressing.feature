@@ -1,4 +1,4 @@
-@unit @complex
+@complex @unit
 Feature: Complex Addressing
 
     @wip

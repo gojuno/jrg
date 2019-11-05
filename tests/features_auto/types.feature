@@ -1,4 +1,4 @@
-@unit @type
+@type @unit
 Feature: Types
 
     Scenario: Inside a building with no points, close to other building

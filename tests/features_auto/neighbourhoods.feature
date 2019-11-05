@@ -1,4 +1,4 @@
-@unit @admin
+@admin @unit
 Feature: Neighbourhoods
 
     Scenario: East Harlem

@@ -27,7 +27,7 @@ not to adjust tests you don't intend to. Do not download OSM data straight into 
 file; copy and paste individual objects instead (Ctrl+Alt+V pastes in place).
 When you're done, remove the layer from JOSM and run the scripts:
 
-    ./update_unit_tests.sh
+    utils/update_unit_tests.sh
 
 It would turn negative identifiers into positive, keeping object relations. And rebuild
 the files inside the `features_auto` directory. Do not edit these directly.

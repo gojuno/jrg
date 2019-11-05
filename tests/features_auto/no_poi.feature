@@ -1,4 +1,4 @@
-@unit @poi
+@poi @unit
 Feature: No Poi
 
     Scenario: Ignore a lone-standing POI
