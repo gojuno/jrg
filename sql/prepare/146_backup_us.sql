@@ -10,7 +10,7 @@ begin
         );
     end if;
 
-    if not exists (select 1 from geocoder_admin where arank = 40 and "name" = 'New York') then
+    if not exists (select 1 from geocoder_admin where arank = 40 and name = 'New York') then
         insert into geocoder_admin (osm_type, osm_id, type, arank, name, geom)
         values (
             'relation', 61320, 'state', 40, 'New York',

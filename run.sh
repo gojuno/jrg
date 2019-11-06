@@ -14,7 +14,7 @@ if [ $# -gt 0 ]; then
         -d $PGDATABASE --prefix geocoder "$1"
     for f in "$HERE"/sql/prepare/*; do
         echo "$f"
-        psql -qXf "$f"
+        psql -v ON_ERROR_STOP=1 -qXf "$f"
     done
 fi
 

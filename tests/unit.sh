@@ -18,7 +18,7 @@ osm2pgsql --slim --drop --style "$HERE/sql/geocoder.style" \
 # Execute all the scripts
 for f in "$HERE"/sql/prepare/* "$HERE"/sql/query/*; do
     echo "$f"
-    psql -qXf "$f"
+    psql -v ON_ERROR_STOP=1 -qXf "$f"
 done
 
 # Creating a virtual environment if it doesn't exist
@@ -31,7 +31,8 @@ fi
 # Start web server in the background
 export FLASK_APP="$HERE/web/geocoder.py"
 export FLASK_ENV=development
-"$VENV/bin/flask" run 2>/dev/null &
+export GEOCODER_PORT=5001
+"$VENV/bin/flask" run --port $GEOCODER_PORT 2>/dev/null &
 FLASK_JOB="$(jobs -p | head -n 1)"
 trap "kill $FLASK_JOB; exit" EXIT SIGHUP SIGINT SIGQUIT SIGTERM
 

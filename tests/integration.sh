@@ -13,4 +13,4 @@ else
     TAGS="--tags ~wip"
 fi
 export PYTHONPATH="$HERE"
-"$BEHAVE" -f formatter:BareFormatter --tags admin --tags ~unit $TAGS $@ "$HERE"
+"$BEHAVE" -f formatter:BareFormatter --tags ~load --tags ~unit $TAGS $@ "$HERE"

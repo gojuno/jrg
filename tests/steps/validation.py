@@ -63,7 +63,7 @@ def response_has_tag(response, k, v, all_places=True):
             ctx_k = 'house_number'
         elif k == 'city' and 'city' not in ctx and all_places:
             ctx_k = k
-            for place in ('locality', 'hamlet', 'village', 'town'):
+            for place in ('town', 'village', 'locality'):
                 if place in ctx:
                     ctx_k = place
                     break

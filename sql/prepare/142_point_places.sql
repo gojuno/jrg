@@ -19,7 +19,7 @@ with place_nodes as (
         where ST_Intersects(place_poly.way, node.way)
         and place_poly.place = node.place
     )
-    and place in ('town', 'village', 'hamlet', 'locality', 'suburb', 'neighbourhood')
+    and place in ('city', 'town', 'village', 'hamlet', 'locality', 'suburb', 'neighbourhood')
 ), nodes_with_enclosing as (
     -- Adding to these enclosing admin polygons
     select node.place, node.way, coalesce(e6.way, e4.way, ST_Buffer(node.way, 20000, 1)) as enclosing
@@ -75,7 +75,7 @@ with place_sizes as (
     select place,
         round(percentile_cont(0.8) within group (order by ST_MaxDistance(way, way)) / 2) as radius
     from geocoder_polygon
-    where place in ('town', 'village', 'hamlet', 'locality', 'suburb', 'neighbourhood')
+    where place in ('city', 'town', 'village', 'hamlet', 'locality', 'suburb', 'neighbourhood')
     group by place
 )
 update place_polygons_tmp poly

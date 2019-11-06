@@ -1,10 +1,11 @@
 <osm version="0.6" upload="false" generator="JOSM">
-  <node id="12010" lat="40.76903778829" lon="-73.96489888497" version="1">
-    <tag k="complex" v="yes"/>
-    <tag k="feature" v="address_points"/>
-    <tag k="name" v="Address point with matching road further than the other"/>
-    <tag k="sid" v="address_points05a"/>
-    <tag k="then" v="address is 101 East 69th Street"/>
+  <node id="12011" lat="40.55862947838" lon="-74.43799049106" version="1">
+    <tag k="admin" v="yes"/>
+    <tag k="big" v="yes"/>
+    <tag k="feature" v="outside_nyc"/>
+    <tag k="name" v="City and county on one object are decoupled"/>
+    <tag k="sid" v="outside_nyc12"/>
+    <tag k="then" v="city is Whatever City, Whatever City, New Jersey"/>
   </node>
   <node id="10000" version="1" lat="40.6785188" lon="-73.9897708"/>
   <node id="10001" version="1" lat="40.6785532" lon="-73.9898567"/>
@@ -2982,7 +2983,7 @@
     <tag k="is_in:continent" v="North America"/>
     <tag k="is_in:country" v="USA"/>
     <tag k="name" v="Islip"/>
-    <tag k="place" v="city"/>
+    <tag k="place" v="town"/>
     <tag k="population" v="327923"/>
     <tag k="wikidata" v="Q1751219"/>
   </node>
@@ -3613,6 +3614,7 @@
     <tag k="big" v="yes"/>
     <tag k="feature" v="outside_nyc"/>
     <tag k="name" v="A hamlet among many"/>
+    <tag k="sid" v="outside_nyc11"/>
     <tag k="then" v="response contains: hamlet=Meyersville"/>
   </node>
   <node id="11868" version="1" lat="41.00685018387" lon="-74.59717071533"/>
@@ -3977,6 +3979,13 @@
     <tag k="addr:housenumber" v="101"/>
     <tag k="addr:postcode" v="10021"/>
     <tag k="addr:street" v="East 69th Street"/>
+  </node>
+  <node id="12010" version="1" lat="40.76903778829" lon="-73.96489888497">
+    <tag k="complex" v="yes"/>
+    <tag k="feature" v="address_points"/>
+    <tag k="name" v="Address point with matching road further than the other"/>
+    <tag k="sid" v="address_points05a"/>
+    <tag k="then" v="address is 101 East 69th Street"/>
   </node>
   <node id="12013" version="1" lat="40.8427778" lon="-73.8788889">
     <tag k="ele" v="12"/>
@@ -8820,6 +8829,8 @@
     <nd ref="11880"/>
     <nd ref="11881"/>
     <nd ref="11878"/>
+    <tag k="admin_level" v="6"/>
+    <tag k="boundary" v="administrative"/>
     <tag k="name" v="Whatever City"/>
     <tag k="place" v="city"/>
   </way>
