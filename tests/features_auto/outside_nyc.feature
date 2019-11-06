@@ -54,8 +54,12 @@ Feature: Outside Nyc
             | Plainfield | Plainfield |
 
     Scenario: A hamlet among many
-        When location is -74.46988114357, 40.69085645301
+        When point is outside_nyc11
         Then response contains
             | hamlet |
             | Meyersville |
+
+    Scenario: City and county on one object are decoupled
+        When point is outside_nyc12
+        Then city is Whatever City, Whatever City, New Jersey
 
