@@ -4,12 +4,12 @@ MAINTAINER Juno Inc <gojuno.com>
 # this stage was inspired by https://github.com/appropriate/docker-postgis/blob/master/11-2.5/Dockerfile
 # that wasn't maintained any more and we do not need some migration stuff from it
 
-ENV POSTGIS_MAJOR 3
-ENV POSTGIS_VERSION 3.0.0+dfsg-2~exp1.pgdg100+1
+ARG POSTGIS_MAJOR=3
+ARG POSTGIS_VERSION="3.0.0+dfsg-2~exp1.pgdg100+1"
 
 #TODO switch to versions when we will have they similar with mdillon postgis repo
 # https://hub.docker.com/r/mdillon/postgis/dockerfile
-ENV GEOCODER_BRANCH master
+ARG GEOCODER_BRANCH="master"
 
 RUN apt-get update \
       && apt-cache showpkg postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
