@@ -70,14 +70,17 @@ create index on geocoder_point (osm_id);
 
 
 -- 5. Limit these polygons to a buffer radius dependent on the "place" tag.
-with place_sizes as (
+-- It was CTE but due to pg12 CTE materialized behavior and backward uncompatible
+-- materialized statemnt we rewrote in to temporary table
+create temporary table  place_sizes as (
     -- Calculating 80% percentile median place sizes for buffer values
     select place,
         round(percentile_cont(0.8) within group (order by ST_MaxDistance(way, way)) / 2) as radius
     from geocoder_polygon
     where place in ('city', 'town', 'village', 'hamlet', 'locality', 'suburb', 'neighbourhood')
     group by place
-)
+);
+
 update place_polygons_tmp poly
 set geom = ST_Intersection(geom, ST_Buffer(
         (select way from geocoder_point node where node.osm_id = poly.osm_id),
