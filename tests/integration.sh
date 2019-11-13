@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e -u
 HERE="$(dirname "$0")"
-if [ -e "$HERE/../.venv/bin/behave" ]; then
-    BEHAVE="$HERE/../.venv/bin/behave"
+VENV="${VENV:-$HERE/../.venv}"
+
+if [ -e "$VENV/bin/behave" ]; then
+    BEHAVE="$VENV/bin/behave"
 else
     BEHAVE=behave
 fi
+
 if [ "${1-}" == "wip" ]; then
     TAGS="--tags wip"
     shift
