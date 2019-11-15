@@ -3,11 +3,13 @@
 # Scirt to init container with data.
 # $1 for osm.pbf file
 
-PGUSER=postgres
-PGDATABASE=postgres
+PGUSER="${PGUSER:-postgres}"
+PGDATABASE="${PGDATABASE:-postgres}"
 PGDATA=/pgdata/
 
 JRG_SRC=/usr/src/jrg
+
+export POSTGRES_DB=${PGDATABASE}
 
 /docker-entrypoint.sh postgres &
 
@@ -22,7 +24,7 @@ done
 ${psql[@]} -c "create extension postgis;"
 
 osm2pgsql --slim --drop --number-processes 4 --style=${JRG_SRC}/sql/geocoder.style \
-    -U postgres -d postgres --prefix geocoder $1
+    -U ${PGUSER} -d ${PGDATABASE} --prefix geocoder $1
 
 for f in ${JRG_SRC}/sql/prepare/* ${JRG_SRC}/sql/query/*; do
 	echo "$0: running $f"; "${psql[@]}" < "$f"; echo
