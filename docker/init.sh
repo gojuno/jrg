@@ -1,17 +1,15 @@
 #!/bin/bash
-
-# Scirt to init container with data.
-# $1 for osm.pbf file
+set -e -u
+[ $# -lt 1 ] && echo "Please specify the OSM PBF file for the first argument." && exit 1
 
 PGUSER="${PGUSER:-postgres}"
 PGDATABASE="${PGDATABASE:-postgres}"
 PGDATA=/pgdata/
-
 JRG_SRC=/usr/src/jrg
 
 export POSTGRES_DB=${PGDATABASE}
 
-/docker-entrypoint.sh postgres &
+/docker-entrypoint.sh postgres
 
 psql=( psql -U postgres -v ON_ERROR_STOP=1 )
 
