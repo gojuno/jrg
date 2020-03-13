@@ -17,4 +17,4 @@ jobs:
           docker run --rm -t -v "${PWD}/tests:/data" -v pgdata:/pgdata -e POSTGRES_PASSWORD=password jrg:${{github.sha}} /init.sh /data/unit_data.osm
           docker run --rm -v pgdata:/pgdata -d -p 8080:80 jrg:${{github.sha}}
           for i in `seq 1 20`; do sleep 1; echo "."; if curl --output /dev/null --silent --head localhost:8080; then break; fi done
-          curl -s 'http://localhost:8080/reverse?lon=-73.96665&lat=40.71181' | grep house_number > /dev/null
+          curl -s 'http://localhost:8080/reverse?lon=-73.96665&lat=40.71181' | grep house_number
