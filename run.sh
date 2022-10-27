@@ -10,6 +10,7 @@ VENV="${VENV:-$HERE/.venv}"
 # If a file was specified, load it into the database
 if [ $# -gt 0 ]; then
     osm2pgsql --slim --drop --number-processes 6 \
+        --hstore-column 'name:' \
         --style "$HERE/sql/geocoder.style" \
         -d $PGDATABASE --prefix geocoder "$1"
     for f in "$HERE"/sql/prepare/*; do

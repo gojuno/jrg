@@ -54,6 +54,15 @@ Sample response:
 }
 ```
 
+Call with language:
+
+    http://localhost:5000/reverse?lon=-73.80401&lat=40.97230&lang=uk
+
+Response will be translated to the desired language (if the translation exists in the source OSM files).
+
+WARNING: for use this feature you need to re-load the OSM into the database. This version is not compatible with the old DB.
+
+
 Note that non-address tags are dropped, and the only information that remains
 is whether a point is a POI or not. The `type` can be one of `admin`, `road`,
 `building`, `address`, or `poi`.
