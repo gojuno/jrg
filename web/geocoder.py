@@ -74,7 +74,10 @@ class ReverseGeocoder(Resource):
 
     def closest_object(self, lon, lat, lang):
         with get_cursor() as cur:
-            cur.execute("select * from geocode_poi(%s, %s, %s)", (lon, lat, lang))
+            if lang:
+                cur.execute("select * from geocode_poi(%s, %s, %s)", (lon, lat, lang))
+            else:
+                cur.execute("select * from geocode_poi_ml(%s, %s)", (lon, lat))
             return self.pack_response(cur.fetchone())
 
     def object_info(self, osm_type, osm_id):
@@ -86,7 +89,10 @@ class ReverseGeocoder(Resource):
         result = {}
         obj = None
         with get_cursor() as cur:
-            cur.execute("select * from geocode_admin(%s, %s, %s)", (lon, lat, lang))
+            if lang:
+                cur.execute("select * from geocode_admin(%s, %s, %s)", (lon, lat, lang))
+            else:
+                cur.execute("select * from geocode_admin_ml(%s, %s)", (lon, lat))
             for row in cur:
                 result[row[0]] = row[1]
                 obj = {
@@ -99,11 +105,15 @@ class ReverseGeocoder(Resource):
             obj = None
         return result, obj
 
-    def make_display_name(self, obj):
+    def make_display_name(self, obj, lang):
         if obj['address'].get('road') is not None:
+            if lang:
+                road = obj['address']['road']
+            else:
+                road = obj['address']['road']['def']
             if obj['address'].get('house_number') is not None:
-                return '{} {}'.format(obj['address']['house_number'], obj['address']['road'])
-            return obj['address']['road']
+                return '{} {}'.format(obj['address']['house_number'], road)
+            return road
         return obj.get('name')
 
     def prune_dict(self, obj):
@@ -144,7 +154,7 @@ class ReverseGeocoder(Resource):
         if obj.get('osm_type') is None:
             return {'error': 'Unable to geocode'}, 404
 
-        obj['display_name'] = self.make_display_name(obj)
+        obj['display_name'] = self.make_display_name(obj, args.lang)
         self.prune_dict(obj)
         return obj
 

@@ -26,37 +26,81 @@ No details or language modifiers work. Only `jsonv2` format
 is supported (no need to specify it). Coordinates and identifiers
 are output as strings.
 
-Sample call:
+Sample call (without language):
 
-    http://localhost:5000/reverse?lon=-73.80401&lat=40.97230
+    http://localhost:5000/reverse?lat=50.2537&lon=7.0099
 
-Sample response:
+Sample multilanguage response:
 
 ```json
 {
+    "type": "building",
+    "osm_type": "way",
+    "osm_id": 499933205,
     "address": {
-        "country": "United States",
-        "state": "New York",
-        "county": "Westchester County",
-        "locality": "Eastchester",
-        "town": "Town of Eastchester",
-        "postcode": "10583",
-        "road": "White Plains Road",
-        "house_number": "750"
+        "road": {
+            "def": "Kirchstra\u00dfe"
+        },
+        "house_number": "2a",
+        "country": {
+            "de": "Deutschland",
+            "en": "Germany",
+            "es": "Alemania",
+            "fr": "Allemagne",
+            "pl": "Niemcy",
+        },
+        "state": {
+            "de": "Rheinland-Pfalz",
+            "en": "Rhineland-Palatinate",
+            "es": "Renania-Palatinado",
+            "fr": "Rh\u00e9nanie-Palatinat",
+            "prefix": "Bundesland"
+        },
+        "county": {
+            "def": "Landkreis Vulkaneifel"
+        },
+        "village": {
+            "def": "Uersfeld"
+        },
+        "township": {
+            "def": "Kelberg",
+            "prefix": "Verbandsgemeinde"
+        },
+        "municipality": {
+            "def": "Uersfeld"
+        }
     },
-    "lat": "40.972219900389",
-    "lon": "-73.8037561",
-    "name": "Lord and Taylor",
-    "display_name": "750 White Plains Road",
-    "osm_id": 3111837409,
-    "osm_type": "node",
-    "type": "poi"
+    "lon": "7.0097705",
+    "lat": "50.25373089939598",
+    "name": {},
+    "display_name": "2a Kirchstra\u00dfe"
 }
 ```
 
 Call with language:
 
-    http://localhost:5000/reverse?lon=-73.80401&lat=40.97230&lang=uk
+    http://localhost:5000/reverse?lat=50.2537&lon=7.00996&lang=en"
+    
+```json
+{
+    "type": "building",
+    "osm_type": "way",
+    "osm_id": 499933205,
+    "address": {
+        "road": "Kirchstra\u00dfe",
+        "house_number": "2a",
+        "country": "Germany",
+        "state": "Rhineland-Palatinate",
+        "county": "Landkreis Vulkaneifel",
+        "village": "Uersfeld",
+        "township": "Kelberg",
+        "municipality": "Uersfeld"
+    },
+    "lon": "7.0097705",
+    "lat": "50.25373089939598",
+    "display_name": "2a Kirchstra\u00dfe"
+}
+```
 
 Response will be translated to the desired language (if the translation exists in the source OSM files).
 
