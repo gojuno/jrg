@@ -23,9 +23,10 @@ where building.osm_id = poly.building_id;
 
 -- 3. Convert the rest of the polygons into points
 insert into geocoder_addresses
-    (osm_id, osm_type, name, street, housenumber, postcode, geom, building_id, is_poi)
+    (osm_id, osm_type, name, name_extra, street, housenumber, postcode, geom, building_id, is_poi)
 select osm_id, 'way',
     coalesce("name", "addr:housename"),
+    "name:",
     "addr:street", "addr:housenumber", "addr:postcode",
     ST_PointOnSurface(way), (
         -- Note that here we look for the smallest building that encloses the polygon

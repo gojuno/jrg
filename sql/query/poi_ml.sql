@@ -1,14 +1,14 @@
-create or replace function geocode_poi(pt_lon numeric, pt_lat numeric, lang text) returns table (
+create or replace function geocode_poi_ml(pt_lon numeric, pt_lat numeric) returns table (
     -- These column names start with "r" to not interfere with the query
     rtype text,
     rosm_type text,
     rosm_id bigint,
-    rstreet text,
+    rstreet json,
     rhousenumber text,
     rpostcode text,
     rlon double precision,
     rlat double precision,
-    rname text,
+    rname json,
     rdistance numeric
 ) as $$
 
@@ -127,16 +127,16 @@ BEGIN
 
     ), united as (
         -- Priority: POI, then the enclosing building, then the closest road
-        select type, osm_id, osm_type, center, geocode_translate(name, name_extra, lang) as name, geocode_translate(street, street_extra, lang) as street, housenumber, postcode from pois
+        select type, osm_id, osm_type, center, geocode_ml(name, name_extra) as name, geocode_ml(street, street_extra) as street, housenumber, postcode from pois
         union all
         -- put "pt" instead of "center" to nullify the distance to the enclosing building
-        select type, osm_id, 'way', pt, geocode_translate(name, name_extra, lang) as name, geocode_translate(street, street_extra, lang) as street, housenumber, postcode from building
+        select type, osm_id, 'way', pt, geocode_ml(name, name_extra) as name, geocode_ml(street, street_extra) as street, housenumber, postcode from building
         union all
-        select type, osm_id, 'way', closest, null, geocode_translate(name, name_extra, lang) as name, null, null from road
+        select type, osm_id, 'way', closest, null, geocode_ml(name, name_extra) as name, null, null from road
         union all
-        select type, osm_id, osm_type, center, geocode_translate(name, name_extra, lang) as name, geocode_translate(street, street_extra, lang) as street, housenumber, postcode from anyclosest
+        select type, osm_id, osm_type, center, geocode_ml(name, name_extra) as name, geocode_ml(street, street_extra) as street, housenumber, postcode from anyclosest
         union all
-        select type, osm_id, 'way', closest, null, geocode_translate(name, name_extra, lang) as name, null, null from roads
+        select type, osm_id, 'way', closest, null, geocode_ml(name, name_extra) as name, null, null from roads
     )
 
     select type, case when osm_id < 0 then 'relation' else osm_type end, abs(osm_id),

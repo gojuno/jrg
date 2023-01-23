@@ -119,7 +119,7 @@ where ST_GeometryType(geom) = 'ST_GeometryCollection';
 
 
 -- 8. Copy the result to the geocoder_admin table.
-insert into geocoder_admin (osm_type, osm_id, name, geom, center, place)
-select 'node', poly.osm_id, node.name, poly.geom, node.way, poly.place
+insert into geocoder_admin (osm_type, osm_id, name, name_extra, geom, center, place)
+select 'node', poly.osm_id, node.name, node."name:", poly.geom, node.way, poly.place
 from place_polygons_tmp poly inner join geocoder_point node using (osm_id)
 where geom is not null and osm_id is not null;

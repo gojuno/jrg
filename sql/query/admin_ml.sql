@@ -1,13 +1,13 @@
-create or replace function geocode_admin(lon numeric, lat numeric, lang text) returns table (
+create or replace function geocode_admin_ml(lon numeric, lat numeric) returns table (
     type text,
-    name text,
+    name json,
     osm_type text,
     osm_id bigint,
     lon double precision,
     lat double precision
 ) as $$
 
-select type, geocode_translate(name, name_extra, lang), osm_type, osm_id,
+select type, geocode_ml(name, name_extra), osm_type, osm_id,
        ST_X(ST_Transform(center, 4326)) as lon,
        ST_Y(ST_Transform(center, 4326)) as lat
 from geocoder_admin

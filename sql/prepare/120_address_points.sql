@@ -5,7 +5,9 @@ drop table if exists geocoder_addresses;
 create table geocoder_addresses as
 select osm_id, 'node' as osm_type,
     coalesce("name", "addr:housename") as name,
-    "addr:street" as street, "addr:housenumber" as housenumber,
+    "name:" as name_extra,
+    "addr:street" as street, null::hstore as street_extra,
+    "addr:housenumber" as housenumber,
     coalesce("addr:postcode", postal_code) as postcode,
     way as geom, null::bigint as building_id,
     (shop is not null or amenity is not null or tourism is not null or
