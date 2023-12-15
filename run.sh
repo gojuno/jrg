@@ -29,4 +29,4 @@ if [ ! -d "$VENV" ]; then
     "$VENV"/bin/pip install -r "$HERE/web/requirements.txt"
 fi
 
-"$VENV/bin/uvicorn" web.geocoder_fast:app
+"$VENV/bin/uvicorn" --host 0.0.0.0 --port 5000 web.geocoder_fast:app
