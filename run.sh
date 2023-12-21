@@ -29,6 +29,4 @@ if [ ! -d "$VENV" ]; then
     "$VENV"/bin/pip install -r "$HERE/web/requirements.txt"
 fi
 
-export FLASK_APP="$HERE/web/geocoder.py"
-export FLASK_ENV=development
-"$VENV/bin/flask" run
+"$VENV/bin/uvicorn" --host 0.0.0.0 --port 5000 web.geocoder_fast:app

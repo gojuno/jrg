@@ -1,4 +1,7 @@
 flask-restful
 flask-cors
-psycopg2
+psycopg2-binary
 uwsgi
+fastapi
+uvicorn[standard]
+psycopg[binary,pool]

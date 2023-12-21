@@ -1,5 +1,10 @@
 # Juno Reverse Geocoder Changelog
 
+## 1.1.0 (2023-12-15)
+
+* Added FastAPI server, should be faster. Not in Docker yet.
+* Fixed a thing in the old geocoder for recent flask-restful library.
+
 ## 1.0.1 (2020-03-13)
 
 * Updated documentation to reflect the

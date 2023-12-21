@@ -14,12 +14,12 @@ api = Api(app)
 
 parser = reqparse.RequestParser()
 parser.add_argument('osm_type', choices=('n', 'w', 'r'), case_sensitive=False,
-                    help='Missing osm_type')
-parser.add_argument('osm_id', type=int, help='Missing osm_id')
-parser.add_argument('lat', type=float, help='Missing lat')
-parser.add_argument('lon', type=float, help='Missing lon')
+                    help='Missing osm_type', location='args')
+parser.add_argument('osm_id', type=int, help='Missing osm_id', location='args')
+parser.add_argument('lat', type=float, help='Missing lat', location='args')
+parser.add_argument('lon', type=float, help='Missing lon', location='args')
 parser.add_argument('admin', type=int, choices=(0, 1), default=1,
-                    help='Use admin=0 to disable admin query')
+                    help='Use admin=0 to disable admin query', location='args')
 
 pool = ThreadedConnectionPool(
     minconn=1, maxconn=12,
